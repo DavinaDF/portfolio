@@ -1,0 +1,12 @@
+.about-container .photo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.about-container p {
+  margin: auto;
+  font-weight: 100;
+  color: #fff;
+  text-align: justify;
+  max-width: 600px;
+}/*# sourceMappingURL=About.css.map */

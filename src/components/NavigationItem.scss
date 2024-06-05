@@ -5,15 +5,15 @@
 }
 
 .nav-item {
-    margin-bottom: 80px;
-}
-
-.nav-item img {
-    position: absolute;
-}
-
-.nav-item h2 {
-    color: #fff;
+    margin-bottom: 50px;
     position: relative;
-    padding: 25px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        left: 20px;
+    }
 }

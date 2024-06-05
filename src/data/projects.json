@@ -5,13 +5,13 @@
         "client": "Argent Bank",
         "date": "2024-05-01",
         "title": "Implémenter une application bancaire en React Redux Toolkit",
-        "image": "",
+        "image": "./Home-ArgentBank.png",
         "description":"Savoir gérer le state management d'une application complexe, comprendre l'utilité de Redux Toolkit, pouvoir documenter les routes API, et anticiper les liens avec la bases de données."
     },
     {
         "id":2,
         "category": "Référencement",
-        "client": "Nina Carducci",
+        "client": "Sophie Bluel",
         "date": "2024-03-20",
         "title": "Optimiser le référencement du site d'une photographe",
         "image": "",

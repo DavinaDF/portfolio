@@ -17,13 +17,39 @@
 .realisation .gallery {
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 .realisation .gallery .gallery-project {
-  width: 300px;
-  background-image: url("/public/card-project-background.png");
-  background-position: center;
+  width: 500px;
+  height: 500px;
+  background-image: url("/public/Modal.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.realisation .gallery .gallery-project h3 {
+  color: #fff;
+}
+.realisation .gallery .gallery-project h4 {
+  margin: 20px;
+}
+.realisation .gallery .gallery-project .tag-category {
+  position: relative;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.realisation .gallery .gallery-project .tag-category img {
+  box-sizing: content-box;
+}
+.realisation .gallery .gallery-project .tag-category h5 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 200;
+  color: #fff;
 }/*# sourceMappingURL=Projects.css.map */

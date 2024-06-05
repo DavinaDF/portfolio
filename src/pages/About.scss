@@ -1,0 +1,16 @@
+.about-container {
+
+    .photo {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        margin: auto;
+        font-weight: 100;
+        color: #fff;
+        text-align: justify;
+        max-width: 600px;
+    }
+}

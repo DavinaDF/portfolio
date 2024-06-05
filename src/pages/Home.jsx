@@ -4,6 +4,7 @@ import illustrationHome from "../assets/images/Home-illustration-computer.png"
 import backMedia from "../assets/images/circle_green.png";
 import ProjectPreview from "../components/ProjectPreview";
 import Skills from "./Skills";
+import About from "./About";
 
 const Home = () => {
     return (
@@ -43,7 +44,8 @@ const Home = () => {
                 <Skills/>
             </div>
             <div className="about">
-                <h3>A propos</h3>
+                <h2>A propos</h2>
+                <About/>
             </div>
             <div className="contat">
                 <h2>Contact</h2>

@@ -24,7 +24,7 @@ const Skills = () => {
                     </section>
                 ))}
             </div>
-            <div className="services">
+            {/* <div className="services">
                 <ul className="list-services">
                     {data.services.map((service)=>(
                         <div className="tag-service">
@@ -33,7 +33,7 @@ const Skills = () => {
                         </div>
                     ))}
                 </ul>
-            </div>
+            </div> */}
         </div>
     );
 };
