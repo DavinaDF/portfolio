@@ -26,7 +26,7 @@
         .gallery-project {
             width: 500px;
             height: 500px;
-            background-image: url("/public/Modal.png");
+            background-image: url("/Modal.png");
             background-repeat: no-repeat; 
             background-size: 100%;
             padding: 15px;
@@ -37,9 +37,6 @@
 
             h3 {
                 color: #fff;
-            }
-            h4 {
-                margin: 20px;
             }
             .tag-category {
                 position: relative;
@@ -56,6 +53,24 @@
                     font-size: 10px;
                     font-weight: 200;
                     color: #fff;
+                }
+            }
+
+            .project-content {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-around;
+
+                .text-container {
+                    width: 40%;
+                    h4 {
+                        margin-bottom: 10px;
+                    }
+                }
+                .visual-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
                 }
             }
         }

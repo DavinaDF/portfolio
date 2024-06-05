@@ -15,7 +15,7 @@
 
     .text {
         max-width: 800px;
-        margin: auto;
+        margin: 0 50px;
 
         h1 {
             color: #fff;
@@ -70,17 +70,21 @@
 
 .skills {
     background-color: #fff;
-    padding: 30px 0;
+    margin-bottom: 40px;
 }
 
 .about {
     background-color: #1D1D1D;
-    padding: 30px 0;
 
     h2 {
         color: #fff;
         text-align: center;
         font-size: 40px;
-        margin: 50px;
     }
+}
+
+footer {
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
 }

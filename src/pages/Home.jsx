@@ -1,5 +1,6 @@
 // import { Link } from "react-router-dom";
 import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 import illustrationHome from "../assets/images/Home-illustration-computer.png"
 import backMedia from "../assets/images/circle_green.png";
 import ProjectPreview from "../components/ProjectPreview";
@@ -35,21 +36,22 @@ const Home = () => {
                 </div>
             </section>
             </div>
-            <div className="realisation">
+            <div className="realisation" id="projects">
                 <h2>Mes réalisations</h2>
                 <ProjectPreview/>
             </div>
-            <div className="skills">
+            <div className="skills" id="skills">
                 <h2>Mes compétences</h2>
                 <Skills/>
             </div>
-            <div className="about">
+            <div className="about" id="about">
                 <h2>A propos</h2>
                 <About/>
             </div>
             <div className="contat">
                 <h2>Contact</h2>
             </div>
+            <Footer/>
         </div>
     );
 };

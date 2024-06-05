@@ -14,9 +14,9 @@ const About = () => {
             <br /><br />
             En 2019, après quelques mois à voyager seule autour du monde, je me lance dans le stylisme et la création de vêtements. Durant 2 ans, je vais créer des vêtements pour ma propre marque. De la réflexion à la vente, en passant par la couture, je fais tout cela toute seule. 
             <br /><br />
-            Fin 2021, après les difficultés liées au Covid, et l’arrivée d’un bébé, je ferme ma micro-entreprise et deviens responsable en restauration pour un hôtel 4* en Suisse. 
+            Fin 2021, après les difficultés liées au Covid, et l’arrivée d’un bébé, je ferme ma micro-entreprise et je pars travailler en Suisse dans la restauration.
             <br /><br />
-            Finalement, après un bilan de compétences complet et un réel coup de coeur pour le développement web, je choisis de suivre une formation de développeuse front end. 
+            Finalement, après un bilan de compétences complet, je décide de suivre une formation de développeuse front end. 
             <br /><br />
             Ce métier est un choix du coeur, j’aime créer, j’aime coder, et toutes mes expériences passées me sont utiles au quotidien. </p>
         </div>
