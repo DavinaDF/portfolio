@@ -1,0 +1,24 @@
+
+* {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  text-decoration: none;
+}
+
+img {
+  overflow-clip-margin:unset;
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    background-color: #1D1D1D;
+    font-family: "JetBrains Mono";
+    max-width: 1960px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

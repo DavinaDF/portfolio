@@ -1,0 +1,34 @@
+[    
+    {
+        "id":1,
+        "category": "Front-end",
+        "date": "2024-05-01",
+        "title": "Implémenter une application bancaire en React Redux Toolkit",
+        "image": "",
+        "description":"Savoir gérer le state management d'une application complexe, comprendre l'utilité de Redux Toolkit, pouvoir documenter les routes API, et anticiper les liens avec la bases de données."
+    },
+    {
+        "id":2,
+        "category": "Référencement",
+        "date": "2024-03-20",
+        "title": "Optimiser le référencement du site d'une photographe",
+        "image": "",
+        "description":"Identifier les problèmes de performances et de chargements. Proposer des recommandations adaptées, et des changements avec de forts impacts."
+    },
+    {
+        "id":3,
+        "category": "Front-end",
+        "date": "2024-03-07",
+        "title": "Développement front-end avec React",
+        "image": "",
+        "description":"Développer une interface web front-end avec Sass et React, en utilisant la logique des composants React, et la navigation React Router"
+    },
+    {
+        "id":4,
+        "category": "CMS",
+        "date": "2019-05-01",
+        "title": "Création d'une boutique en ligne",
+        "image": "",
+        "description":"Création d'une boutique en ligne avec Wix."
+    }
+]

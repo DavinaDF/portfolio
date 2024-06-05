@@ -1,0 +1,25 @@
+.realisation {
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        margin: 50px;
+    }
+
+    .list-project {
+        max-width: 1024px;
+    }
+
+    .gallery {
+        margin: auto;
+        max-width: 1024px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .background-card-project {
+        width: 300px;
+        position: relative;
+    }
+
+}

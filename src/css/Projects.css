@@ -1,0 +1,19 @@
+.realisation h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin: 50px;
+}
+.realisation .list-project {
+  max-width: 1024px;
+}
+.realisation .gallery {
+  margin: auto;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.realisation .background-card-project {
+  width: 300px;
+  position: relative;
+}/*# sourceMappingURL=Projects.css.map */
