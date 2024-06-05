@@ -1,21 +1,21 @@
 import data from "../data/skills.json";
 import tagYellow from "../assets/images/tag_yellow.png";
 import tagGreen from "../assets/images/tag_green.png";
-import tagBlue from "../assets/images/tag_bleu.png";
+// import tagBlue from "../assets/images/tag_bleu.png";
 
 const Skills = () => {
     return (
         <div className="skills-container">
             <div className="skills">
-                {data.domaines.map((domaine)=> (
-                    <section className="domain-column">
+                {data.domaines.map((domaine, index)=> (
+                    <section className="domain-column" key={index}>
                         <div className="tag-name">
                             <img src={tagYellow} alt="" />
                             <h3>{domaine.name}</h3>
                         </div>
                         <ul className="list-skills">
-                            {domaine.skills.map((skill)=>(
-                                <div className="tag-skill">
+                            {domaine.skills.map((skill, index)=>(
+                                <div className="tag-skill"  key={index}>
                                     <img src={tagGreen} alt="" />
                                     <h4>{skill}</h4>
                                 </div>
