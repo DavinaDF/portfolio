@@ -1,0 +1,46 @@
+{
+    "services": [
+        "Audit",
+        "Accessibilité",
+        "Recherche utilisateur",
+        "Conception centrée utilisateur",
+        "Atelier co-conception",
+        "Développement front-end",
+        "Développement Wordpress",
+        "Création de site"
+    ],
+    "domaines": [
+    {
+        "name": "UX",
+        "skills": [
+            "Axure",
+            "Figma",
+            "Sketch"
+        ]
+    },
+    {
+        "name": "Frontend",
+        "skills": [
+            "HTML/CSS",
+            "Javascript",
+            "React",
+            "Sass"
+        ]
+    },
+    {
+        "name": "No code",
+        "skills": [
+            "Wordpress",
+            "Wix"
+        ]
+    },
+    {
+        "name": "SEO",
+        "skills": [
+            "Lighthouse",
+            "Wave",
+            "Schema.org"
+        ]
+    }
+] 
+}

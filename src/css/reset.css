@@ -12,6 +12,12 @@ img {
   overflow: hidden;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #1D1D1D;
   font-family: "JetBrains Mono";

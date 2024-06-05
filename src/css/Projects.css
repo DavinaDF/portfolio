@@ -1,3 +1,8 @@
+.realisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .realisation h2 {
   color: #fff;
   text-align: center;
@@ -6,14 +11,19 @@
 }
 .realisation .list-project {
   max-width: 1024px;
+  display: grid;
+  justify-content: center;
 }
 .realisation .gallery {
   margin: auto;
-  max-width: 1024px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
 }
-.realisation .background-card-project {
+.realisation .gallery .gallery-project {
   width: 300px;
-  position: relative;
+  background-image: url("/public/card-project-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }/*# sourceMappingURL=Projects.css.map */

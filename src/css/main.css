@@ -13,6 +13,7 @@ img {
 }
 
 body {
+  background-color: #1D1D1D;
   font-family: "JetBrains Mono";
   max-width: 1960px;
   height: 100%;
@@ -83,6 +84,47 @@ body {
   left: 155px;
 }
 
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin: 50px;
+}
+
+.skills {
+  background-color: #fff;
+}
+
+.realisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.realisation h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin: 50px;
+}
+.realisation .list-project {
+  max-width: 1024px;
+  display: grid;
+  justify-content: center;
+}
+.realisation .gallery {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.realisation .background-card-project {
+  width: 300px;
+  position: relative;
+}
+.realisation .category {
+  position: absolute;
+  bottom: 70px;
+}
+
 .nav-container {
   width: 100%;
   display: flex;
@@ -101,4 +143,11 @@ body {
   color: #fff;
   position: relative;
   padding: 25px;
+}
+
+h2 {
+  color: #1D1D1D;
+  text-align: center;
+  font-size: 40px;
+  margin: 50px;
 }/*# sourceMappingURL=main.css.map */

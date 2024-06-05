@@ -3,6 +3,7 @@ import Header from "../components/layout/Header";
 import illustrationHome from "../assets/images/Home-illustration-computer.png"
 import backMedia from "../assets/images/circle_green.png";
 import ProjectPreview from "../components/ProjectPreview";
+import Skills from "./Skills";
 
 const Home = () => {
     return (
@@ -39,6 +40,7 @@ const Home = () => {
             </div>
             <div className="skills">
                 <h2>Mes compétences</h2>
+                <Skills/>
             </div>
             <div className="about">
                 <h3>A propos</h3>

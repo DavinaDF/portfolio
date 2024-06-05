@@ -1,0 +1,69 @@
+h2 {
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .skills {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        ul {
+            margin-block-start: 0;
+        }
+
+        .tag-name {
+            position: relative;
+
+            h3 {
+                color: #fff;
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+            
+        }
+        .tag-skill {
+            position: relative;
+
+            h4 {
+                color: #fff;
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+        }
+    }
+    .services {
+        width: 40%;
+    }
+    .list-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 20px;
+
+        .tag-service {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            h4 {
+                padding: 0 5px;
+                white-space: pre-wrap;
+                color: #fff;
+                font-size: 12px;
+                position: absolute;
+                text-align: center;
+            }
+        }
+    }
+}

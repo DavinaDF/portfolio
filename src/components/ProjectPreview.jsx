@@ -8,12 +8,16 @@ const ProjectPreview = () => {
         <div className="list-project">
             <ul className="gallery">
                 {projectsData.map((project) => (
-                    <div className="gallery__project" key={project.id}>
-                        <img className="background-card-project" src={projectBackground} alt="Background card project" />
-                        <img src={skillTag} alt="Domaine de compétence du projet" />
-                        <h3>{project.category}</h3>
-                        <img src={project.image} alt={project.title} />
-                        <h2>{project.title}</h2>
+                    <div className="gallery-project" key={project.id}>
+                        {/* <img className="background-card-project" src={projectBackground} alt="Background card project" /> */}
+                        <h3>{project.client}</h3>
+                        <h4>{project.title}</h4>
+                        <p>{project.description}</p>
+                        <div className="tag-category">
+                            <img src={skillTag} alt="Domaine de compétence du projet" />
+                            <h5>{project.category}</h5>
+                        </div>
+                        
                     </div>
                 ))}
             </ul>
