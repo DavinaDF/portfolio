@@ -10,7 +10,7 @@
         "description":"Savoir gérer le state management d'une application complexe, comprendre l'utilité de Redux Toolkit, pouvoir documenter les routes API, et anticiper les liens avec la bases de données."
     },
     {
-        "id":3,
+        "id":2,
         "category": "Front-end",
         "client": "Kasa",
         "date": "2024-03-07",
@@ -20,7 +20,7 @@
         "description":"Développer une interface web front-end avec Sass et React, en utilisant la logique des composants React, et la navigation React Router"
     },
     {
-        "id":4,
+        "id":3,
         "category": "CMS",
         "client": "Sweat it",
         "date": "2019-05-01",
@@ -36,7 +36,7 @@
         "date": "2023-04-01",
         "link": "",
         "title": "Création d'une boutique en ligne",
-        "image": "",
+        "image": "./Apercu-maisonbolze.png",
         "description":"Création d'une boutique en ligne avec Wix."
     }
 ]
