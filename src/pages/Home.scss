@@ -56,14 +56,19 @@
         display: flex;
         gap: 50px;
         color: #fff;
-        position: relative;
 
-        i {
-            position: absolute;
-            font-size: 50px;
-            top: 20px;
-            left: 155px;
+        .link-github {
+            position: relative;
+
+            i {
+                position: absolute;
+                font-size: 50px;
+                // top: 20px;
+                // left:20px;
+            }
         }
+
+        
     }
 
 }
@@ -87,4 +92,16 @@ footer {
     height: 30px;
     background-color: #fff;
     text-align: center;
+}
+
+@media only screen and (max-width:780px){
+    .first-view {
+        display: flex;
+        flex-direction: column;
+
+        .left-part {
+            width: 100%;
+            margin: auto;
+        }
+    }
 }

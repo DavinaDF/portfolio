@@ -4,7 +4,8 @@
         "category": "Front-end",
         "client": "Argent Bank",
         "date": "2024-05-01",
-        "title": "Implémenter une application bancaire en React Redux Toolkit",
+        "link": "https://github.com/DavinaDF/ArgentBank-website.git",
+        "title": "Application bancaire en React Redux Toolkit",
         "image": "./Apercu-ArgentBank.png",
         "description":"Savoir gérer le state management d'une application complexe, comprendre l'utilité de Redux Toolkit, pouvoir documenter les routes API, et anticiper les liens avec la bases de données."
     },
@@ -13,6 +14,7 @@
         "category": "Front-end",
         "client": "Kasa",
         "date": "2024-03-07",
+        "link": "https://github.com/DavinaDF/P8.git",
         "title": "Développement front-end avec React",
         "image": "./Apercu-Kasa.png",
         "description":"Développer une interface web front-end avec Sass et React, en utilisant la logique des composants React, et la navigation React Router"
@@ -22,6 +24,7 @@
         "category": "CMS",
         "client": "Sweat it",
         "date": "2019-05-01",
+        "link": "",
         "title": "Création d'une boutique en ligne",
         "image": "./Apercu-sweatit.png",
         "description":"Création d'une boutique en ligne avec Wix."
@@ -31,6 +34,7 @@
         "category": "CMS",
         "client": "Maison Bolze",
         "date": "2023-04-01",
+        "link": "",
         "title": "Création d'une boutique en ligne",
         "image": "",
         "description":"Création d'une boutique en ligne avec Wix."
