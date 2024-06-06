@@ -6,7 +6,7 @@ const Header = () => {
           <a href="#projects"><NavigationItem title="Réalisations"/></a>     
           <a href="#skills"><NavigationItem title="Compétences"/>  </a>
           <a href="#about"><NavigationItem title="A propos"/></a>                       
-          <NavigationItem title="Contact"/>              
+          <a href="mailto:davina.devfront@gmail.com"><NavigationItem title="Contact"/> </a>             
         </div>
     );
 };

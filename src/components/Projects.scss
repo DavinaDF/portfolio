@@ -77,3 +77,39 @@
     }
 
 }
+
+@media screen and (max-width:768px){
+    
+    .realisation{
+
+        margin-top: 40px;
+        border-top : solid #fff;
+        h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .gallery {
+            display: block;
+
+            .gallery-project {
+                margin: auto;
+                width: 80%;
+                height: 100%;
+
+                h3 {
+                    font-size: 16px;
+                }
+                h4, p {
+                    font-size: 14px;
+                }
+                .visual-container{
+                    gap: 5px;
+                }
+                .project-content{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

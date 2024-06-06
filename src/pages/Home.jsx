@@ -6,6 +6,7 @@ import backMedia from "../assets/images/circle_green.png";
 import ProjectPreview from "../components/ProjectPreview";
 import Skills from "./Skills";
 import About from "./About";
+import NavigationItem from "../components/NavigationItem";
 
 const Home = () => {
     return (
@@ -25,12 +26,16 @@ const Home = () => {
                 </div>
                 <div className="social-media">
                     <div className="link-github">
-                        <img src={backMedia} alt="icon et lien vers github" />
-                        <i className="fa-brands fa-github"></i>
+                        <a href="https://github.com/DavinaDF" target="_blank" className="link-github">
+                            <img src={backMedia} alt="icon et lien vers github" />
+                            <i className="fa-brands fa-github"></i>
+                        </a>
                     </div>
                     <div className="link-linkedin">
-                        <img src={backMedia} alt="icon et lien vers linkedin" />
-                        <i className="fa-brands fa-linkedin-in"></i>
+                        <a href="https://www.linkedin.com/in/davina-crahet-83888847/" target="_blank" className="link-linkedin">
+                            <img src={backMedia} alt="icon et lien vers linkedin" />
+                            <i className="fa-brands fa-linkedin-in"></i>
+                        </a>
                     </div>
                     
                 </div>
@@ -40,16 +45,13 @@ const Home = () => {
                 <h2>Mes réalisations</h2>
                 <ProjectPreview/>
             </div>
-            <div className="skills" id="skills">
+            <div className="skills-home" id="skills">
                 <h2>Mes compétences</h2>
                 <Skills/>
             </div>
             <div className="about" id="about">
                 <h2>A propos</h2>
                 <About/>
-            </div>
-            <div className="contat">
-                <h2>Contact</h2>
             </div>
             <Footer/>
         </div>
