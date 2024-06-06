@@ -77,14 +77,20 @@
         gap: 50px;
         color: #fff;
 
-        .link-github {
+        .link-github, .link-linkedin {
+            width: 87px;
+            height: 84px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
 
+            img {
+                position: absolute;
+            }
             i {
                 position: absolute;
                 font-size: 50px;
-                // top: 20px;
-                // left:20px;
             }
         }
 
@@ -116,34 +122,50 @@ footer {
 
 @media screen and (max-width:768px){
     .first-view {
-        flex-direction: column;
-        max-width: 100%;
+        display: block;
+        width: 100%;
+        margin: auto;
 
         .left-part {
-            display: flex;
-
+            display: block;
+            width: 100%;
+            min-height: 0;
+            margin: auto;
             .text {
                 width: 100%;
                 h1 {
-                    width: 100%;
-                    font-size: 18px;
+                    font-size: 16px;
                 }
                 p {
-                    width: 100%;
                     font-size: 16px;
                 }
             }
             img {
-                display: none;
+                width: 100%;
+                margin: auto;
             }
-            
         }
-    
-    }   
+        .right-part {
+            background-color: #1D1D1D;;
+            width: 100%;
+            min-height: 0;
+            padding: 0;
 
-    img {
-        object-fit: contain;
-        margin-bottom: 0px;
-        max-width: 100%;
+            .nav-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .nav-item {
+                    width: 180px;
+                    height: 60px;
+                    margin: 0 10px;
+
+                    h2 {
+                        padding: 0;
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
     }
 }

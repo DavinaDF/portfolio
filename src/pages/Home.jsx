@@ -11,15 +11,15 @@ const Home = () => {
     return (
         <div className="home">
             <div className="first-view">
-            <section className="left-part">
+            <div className="left-part">
                 <div className="text">
-                <h1>Bienvenu dans mon univers !</h1> 
-                <p>Je suis <strong>Davina Crahet</strong>, <strong>UX designer</strong> et <strong>développeuse web front-end</strong>. <br /><br />Concevons ensemble des <strong>sites</strong> qui vous correspondent tout en étant adaptés à vos <strong>utilisateurs</strong>.
-                </p> 
+                    <h1>Bienvenu dans mon univers !</h1> 
+                    <p>Je suis <strong>Davina Crahet</strong>, <strong>UX designer</strong> et <strong>développeuse web front-end</strong>. <br /><br />Concevons ensemble des <strong>sites</strong> qui vous correspondent tout en étant adaptés à vos <strong>utilisateurs</strong>.
+                    </p> 
                 </div>
                 <img src={illustrationHome} alt="Illustration ordinateur plante tasse" />
-            </section>
-            <section className="right-part">
+            </div>
+            <div className="right-part">
                 <div className="navigation">
                 <Header/>
                 </div>
@@ -34,7 +34,7 @@ const Home = () => {
                     </div>
                     
                 </div>
-            </section>
+            </div>
             </div>
             <div className="realisation" id="projects">
                 <h2>Mes réalisations</h2>
