@@ -15,7 +15,8 @@ const ProjectPreview = () => {
                                 <img src={skillTag} alt="Domaine de compétence du projet" />
                                 <h5>{project.category}</h5>
                             </div>
-                            <a href={project.link}>Lien Github</a>
+
+                            <a href={project.link} target="_blank">Lien Github</a>
                             
                         </div>
                         <div className="text-container">
