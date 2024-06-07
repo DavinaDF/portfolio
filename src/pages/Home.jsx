@@ -6,7 +6,6 @@ import backMedia from "../assets/images/circle_green.png";
 import ProjectPreview from "../components/ProjectPreview";
 import Skills from "./Skills";
 import About from "./About";
-import NavigationItem from "../components/NavigationItem";
 
 const Home = () => {
     return (
