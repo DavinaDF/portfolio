@@ -10,7 +10,7 @@ const Skills = () => {
                 <h2>Mes compétences</h2>
                 <div className="bloc">
                 {data.domaines.map((domaine, index)=> (
-                    <section className="domain-column" key={index}>
+                    <div className="domain-column" key={index}>
                         <div className="name">
                             <img src={tagYellow} alt="" />
                             <h3>{domaine.name}</h3>
@@ -23,7 +23,7 @@ const Skills = () => {
                                 </div>
                             ))}
                         </ul>
-                    </section>
+                    </div>
                 ))}
                 </div>
             </div>

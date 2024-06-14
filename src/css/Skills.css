@@ -6,6 +6,7 @@ h2 {
 }
 
 .skills-container {
+  z-index: 1;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 30px;
@@ -36,6 +37,7 @@ h2 {
   left: 20px;
 }
 .skills-container .bloc-services {
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
