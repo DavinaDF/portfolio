@@ -1,13 +1,13 @@
 {
     "services": [
-        "Audit",
-        "Accessibilité",
         "Recherche utilisateur",
         "Conception centrée utilisateur",
         "Atelier co-conception",
         "Développement front-end",
         "Développement Wordpress",
-        "Création de site"
+        "Création de site",
+        "SEO",
+        "Accessibilité"
     ],
     "domaines": [
     {

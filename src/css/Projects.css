@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 .realisation h2 {
   color: #fff;
@@ -10,20 +11,19 @@
   margin: 50px;
 }
 .realisation .list-project {
-  max-width: 1024px;
   display: grid;
   justify-content: center;
 }
-.realisation .gallery {
-  margin: auto;
+.realisation .gallery-project {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.realisation .gallery .gallery-project {
+.realisation .gallery-project .card-project {
+  position: relative;
   width: 500px;
-  height: 500px;
-  background-image: url("/public/Modal.png");
+  height: auto;
+  background-image: url("/Modal.png");
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 15px;
@@ -31,25 +31,99 @@
   flex-direction: column;
   align-items: center;
 }
-.realisation .gallery .gallery-project h3 {
+.realisation .gallery-project .card-project h3 {
   color: #fff;
 }
-.realisation .gallery .gallery-project h4 {
-  margin: 20px;
+.realisation .gallery-project .card-project .preview {
+  margin-top: 25px;
 }
-.realisation .gallery .gallery-project .tag-category {
+.realisation .gallery-project .card-project .actions-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.realisation .gallery-project .card-project .actions-modal img {
+  width: 20px;
+  margin: 4px;
+}
+.realisation .gallery-project .card-project .tag-category {
   position: relative;
   width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.realisation .gallery .gallery-project .tag-category img {
+.realisation .gallery-project .card-project .tag-category img {
   box-sizing: content-box;
+  margin-top: 20px;
 }
-.realisation .gallery .gallery-project .tag-category h5 {
+.realisation .gallery-project .card-project .tag-category h5 {
   position: absolute;
   font-size: 10px;
   font-weight: 200;
   color: #fff;
+}
+.realisation .gallery-project .card-project .project-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.realisation .gallery-project .card-project .project-content .text-container {
+  width: 40%;
+}
+.realisation .gallery-project .card-project .project-content .text-container h4 {
+  margin-bottom: 10px;
+}
+.realisation .gallery-project .card-project .project-content .visual-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-container {
+  position: relative;
+  width: 800px;
+  height: auto;
+  background-image: url("/Modal.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .realisation {
+    margin-top: 40px;
+    border-top: solid #fff;
+  }
+  .realisation h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .realisation .gallery {
+    display: block;
+  }
+  .realisation .gallery .gallery-project {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+  }
+  .realisation .gallery .gallery-project h3 {
+    font-size: 16px;
+  }
+  .realisation .gallery .gallery-project h4, .realisation .gallery .gallery-project p {
+    font-size: 14px;
+  }
+  .realisation .gallery .gallery-project .visual-container {
+    gap: 5px;
+  }
+  .realisation .gallery .gallery-project .project-content {
+    margin-top: 15px;
+  }
 }/*# sourceMappingURL=Projects.css.map */

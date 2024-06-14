@@ -1,34 +1,45 @@
+import { useState } from "react";
 import projectsData from "../../src/data/projects.json";
-import skillTag from "../assets/images/tag_bleu.png";
+import ProjectModal from "./ProjectModal";
+import close from "../assets/images/Close-modal.png";
+import biggerModal from "../assets/images/Bigger-modal.png";
+import littleModal from "../assets/images/Little-modal.png";
 
 const ProjectPreview = () => {
-    return (
-        <div className="list-project">
-            <ul className="gallery">
-                {projectsData.map((project) => (
-                    <div className="gallery-project" key={project.id} >
-                        <h3>{project.client}</h3>
-                        <div className="project-content">
-                        <div className="visual-container">
-                            <img src={project.image} alt="Visuel projet" />
-                            <div className="tag-category">
-                                <img src={skillTag} alt="Domaine de compétence du projet" />
-                                <h5>{project.category}</h5>
-                            </div>
 
-                            <a href={project.link} target="_blank">Lien Github</a>
-                            
-                        </div>
-                        <div className="text-container">
-                            <h4>{project.title}</h4>
-                            <p>{project.description}</p>
-                        </div>
-                        </div>
-                        
-                        
+    const [isVisible, setVisibleModal] = useState(false);
+    const [project, setId] = useState([]);
+
+
+    const closeModal = () => {
+        setVisibleModal(false);
+    };
+
+    const handleDisplayModal = (project) => {
+        setVisibleModal(true);
+        setId(project);
+    }
+
+    return (
+        <div className="gallery-project">
+            {projectsData.map((project) => (
+                <div className="card-project" key={project.id} onClick={
+                    (e) => {
+                        e.preventDefault();
+                    handleDisplayModal(project)}} >
+                    {/* <img className="background" src={backModal} alt="" /> */}
+                    <div className="actions-modal">
+                        <img className="little" src={littleModal} alt="" />
+                        <img className="bigger" src={biggerModal} alt="" />
+                        <img className="close" src={close} alt="" />
                     </div>
-                ))}
-            </ul>
+                    <h3>{project.client}</h3>
+                    <img className="preview" src={project.image} alt="Visuel projet" />
+                </div>
+            ))}
+            {isVisible && (
+                <ProjectModal project={project} isOpen={isVisible} onClose={closeModal}/>
+            )}
         </div>
     );
 };

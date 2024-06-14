@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 
     h2 {
         color: #fff;
@@ -12,20 +13,19 @@
     }
 
     .list-project {
-        max-width: 1024px;
         display: grid;
         justify-content: center;
     }
 
-    .gallery {
-        margin: auto;
+    .gallery-project {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
 
-        .gallery-project {
+        .card-project {
+            position: relative;
             width: 500px;
-            height: 500px;
+            height: auto;
             background-image: url("/Modal.png");
             background-repeat: no-repeat; 
             background-size: 100%;
@@ -38,6 +38,19 @@
             h3 {
                 color: #fff;
             }
+            .preview{
+                margin-top: 25px;
+            }
+            .actions-modal{
+                position: absolute;
+                top: 10px;
+                right: 15px;
+
+                img {
+                    width: 20px;
+                    margin: 4px;
+                }
+            }
             .tag-category {
                 position: relative;
                 width: 100px;
@@ -47,6 +60,7 @@
 
                 img {
                     box-sizing: content-box;
+                    margin-top: 20px;
                 }
                 h5 {
                     position: absolute;
@@ -76,6 +90,23 @@
         }
     }
 
+}
+
+.modal-container{
+    position: relative;
+    width: 800px;
+    height: auto;
+    background-image: url("/Modal.png");
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 800px;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width:768px){

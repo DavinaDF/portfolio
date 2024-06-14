@@ -25,4 +25,10 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+    display: initial;
+  }
 }/*# sourceMappingURL=reset.css.map */

@@ -14,8 +14,7 @@
   justify-content: space-around;
 }
 .left-part .text {
-  max-width: 800px;
-  margin: auto;
+  margin: 0 50px;
 }
 .left-part .text h1 {
   color: #fff;
@@ -41,37 +40,151 @@
 .right-part {
   min-height: 100vh;
   width: 40%;
+  padding: 20px 10px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.right-part .nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.right-part .nav-item {
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.right-part .nav-item h2 {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+}
 .right-part .social-media {
   display: flex;
   gap: 50px;
   color: #fff;
+}
+.right-part .social-media .link-github, .right-part .social-media .link-linkedin {
+  width: 87px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
-.right-part .social-media i {
+.right-part .social-media .link-github a, .right-part .social-media .link-linkedin a {
+  text-decoration: none;
+  color: #fff;
+}
+.right-part .social-media .link-github img, .right-part .social-media .link-linkedin img {
+  position: absolute;
+}
+.right-part .social-media .link-github i, .right-part .social-media .link-linkedin i {
+  color: #fff;
   position: absolute;
   font-size: 50px;
-  top: 20px;
-  left: 155px;
 }
 
-.skills {
+.skills-home {
   background-color: #fff;
-  padding: 30px 0;
+  margin: auto;
 }
 
 .about {
   background-color: #1D1D1D;
-  padding: 30px 0;
+  margin-bottom: 40px;
 }
 .about h2 {
   color: #fff;
   text-align: center;
   font-size: 40px;
-  margin: 50px;
+}
+
+.contact-bottom h2 {
+  color: #fff;
+}
+
+footer {
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .first-view {
+    min-height: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .first-view .left-part {
+    display: block;
+    width: 100%;
+    min-height: 0;
+    margin: auto;
+  }
+  .first-view .left-part .text {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .first-view .left-part .text h1 {
+    font-size: 16px;
+  }
+  .first-view .left-part .text p {
+    font-size: 16px;
+  }
+  .first-view .left-part img {
+    width: 100%;
+    margin: auto;
+  }
+  .first-view .right-part {
+    background-color: #1D1D1D;
+    width: 100%;
+    min-height: 0;
+    padding: 0;
+  }
+  .first-view .right-part .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .first-view .right-part .nav-container .nav-item {
+    width: 180px;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .first-view .right-part .nav-container .nav-item h2 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .first-view .right-part .link-github, .first-view .right-part .link-linkedin {
+    gap: 30px;
+  }
+  .first-view .right-part .link-github img, .first-view .right-part .link-linkedin img {
+    width: 60%;
+  }
+  .first-view .right-part .link-github i, .first-view .right-part .link-linkedin i {
+    font-size: 20px;
+  }
+  .skills-home {
+    background-color: #1D1D1D;
+    border-top: solid #fff;
+    margin: 30px 0;
+  }
+  .about {
+    border-top: solid #fff;
+    background-color: #1D1D1D;
+  }
+  .about h2 {
+    font-size: 24px;
+  }
+  .about p {
+    width: 80%;
+  }
 }/*# sourceMappingURL=Home.css.map */

@@ -1,18 +1,1 @@
-.nav-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-item {
-  margin-bottom: 50px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.nav-item h2 {
-  font-size: 30px;
-  color: #fff;
-  position: absolute;
-  left: 20px;
-}/*# sourceMappingURL=NavigationItem.css.map */
+/*# sourceMappingURL=NavigationItem.css.map */

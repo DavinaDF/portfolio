@@ -2,71 +2,65 @@ h2 {
     color: #1D1D1D;
     text-align: center;
     font-size: 40px;
-    margin: auto;
-    padding: 40px;
+    margin: 40px 0;
 }
 
 .skills-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    
 
-    .skills {
-        width: 60%;
+    .bloc {
         display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
 
         ul {
             margin-block-start: 0;
         }
+    }
+    .name {
+        position: relative;
 
-        .tag-name {
-            position: relative;
-
-            h3 {
-                color: #fff;
-                position: absolute;
-                top: 15px;
-                left: 20px;
-            }
-            
+        h3 {
+            color: #fff;
+            position: absolute;
+            top: 15px;
+            left: 20px;
         }
-        .tag-skill {
-            position: relative;
+        
+    }
+    .tag {
+        position: relative;
 
-            h4 {
-                color: #fff;
-                position: absolute;
-                top: 15px;
-                left: 20px;
-            }
+        h4 {
+            color: #fff;
+            position: absolute;
+            top: 15px;
+            left: 20px;
         }
     }
-    .services {
-        width: 40%;
-    }
-    .list-services {
+    .bloc-services{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-content: center;
-        gap: 20px;
+        grid-template-columns: 1fr 1fr;
 
-        .tag-service {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .name-service {
             position: relative;
-            h4 {
-                padding: 0 5px;
-                white-space: pre-wrap;
-                color: #fff;
-                font-size: 12px;
+            img {
+            width: 200px;
+            }
+            h3 {
                 position: absolute;
-                text-align: center;
+                left: 0;
+                color: #fff;
+                top: 5px;
+                left: 5px;
+                padding: 10px;
+                font-size: 16px;
             }
         }
+        
+
     }
 }
 

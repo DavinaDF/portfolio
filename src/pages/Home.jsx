@@ -4,8 +4,8 @@ import Footer from "../components/layout/Footer";
 import illustrationHome from "../assets/images/Home-illustration-computer.png"
 import backMedia from "../assets/images/circle_green.png";
 import ProjectPreview from "../components/ProjectPreview";
-import Skills from "./Skills";
-import About from "./About";
+import Skills from "../sections/Skills";
+import About from "../sections/About";
 
 const Home = () => {
     return (
@@ -45,7 +45,6 @@ const Home = () => {
                 <ProjectPreview/>
             </div>
             <div className="skills-home" id="skills">
-                <h2>Mes compétences</h2>
                 <Skills/>
             </div>
             <div className="about" id="about">

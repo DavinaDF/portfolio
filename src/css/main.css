@@ -26,6 +26,12 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+    display: initial;
+  }
+}
 
 .first-view {
   min-height: 100vh;
@@ -43,8 +49,7 @@ body {
   justify-content: space-around;
 }
 .left-part .text {
-  max-width: 800px;
-  margin: auto;
+  margin: 0 50px;
 }
 .left-part .text h1 {
   color: #fff;
@@ -70,36 +75,155 @@ body {
 .right-part {
   min-height: 100vh;
   width: 40%;
-  max-width: 600px;
+  padding: 20px 10px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.right-part .nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.right-part .nav-item {
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.right-part .nav-item h2 {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+}
 .right-part .social-media {
   display: flex;
   gap: 50px;
   color: #fff;
+}
+.right-part .social-media .link-github, .right-part .social-media .link-linkedin {
+  width: 87px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
-.right-part .social-media i {
+.right-part .social-media .link-github a, .right-part .social-media .link-linkedin a {
+  text-decoration: none;
+  color: #fff;
+}
+.right-part .social-media .link-github img, .right-part .social-media .link-linkedin img {
+  position: absolute;
+}
+.right-part .social-media .link-github i, .right-part .social-media .link-linkedin i {
+  color: #fff;
   position: absolute;
   font-size: 50px;
-  top: 20px;
-  left: 155px;
 }
 
-.skills {
+.skills-home {
   background-color: #fff;
-  padding: 30px 0;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .about {
   background-color: #1D1D1D;
-  padding: 30px 0;
+  margin-bottom: 40px;
+}
+.about h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
 }
 
+.contact-bottom h2 {
+  color: #fff;
+}
+
+footer {
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .first-view {
+    min-height: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .first-view .left-part {
+    display: block;
+    width: 100%;
+    min-height: 0;
+    margin: auto;
+  }
+  .first-view .left-part .text {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .first-view .left-part .text h1 {
+    font-size: 16px;
+  }
+  .first-view .left-part .text p {
+    font-size: 16px;
+  }
+  .first-view .left-part img {
+    width: 100%;
+    margin: auto;
+  }
+  .first-view .right-part {
+    background-color: #1D1D1D;
+    width: 100%;
+    min-height: 0;
+    padding: 0;
+  }
+  .first-view .right-part .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .first-view .right-part .nav-container .nav-item {
+    width: 180px;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .first-view .right-part .nav-container .nav-item h2 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .first-view .right-part .link-github, .first-view .right-part .link-linkedin {
+    gap: 30px;
+  }
+  .first-view .right-part .link-github img, .first-view .right-part .link-linkedin img {
+    width: 60%;
+  }
+  .first-view .right-part .link-github i, .first-view .right-part .link-linkedin i {
+    font-size: 20px;
+  }
+  .skills-home {
+    background-color: #1D1D1D;
+    border-top: solid #fff;
+    margin: 30px 0;
+  }
+  .about {
+    border-top: solid #fff;
+    background-color: #1D1D1D;
+  }
+  .about h2 {
+    font-size: 24px;
+  }
+  .about p {
+    width: 80%;
+  }
+}
 .realisation {
   display: flex;
   flex-direction: column;
@@ -119,103 +243,192 @@ body {
 .realisation .gallery {
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 .realisation .gallery .gallery-project {
-  width: 300px;
-  background-image: url("/public/card-project-background.png");
-  background-position: center;
+  width: 500px;
+  height: 500px;
+  background-image: url("/Modal.png");
   background-repeat: no-repeat;
   background-size: 100%;
-}
-
-.nav-container {
-  width: 100%;
+  padding: 15px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
-.nav-item {
-  margin-bottom: 80px;
-}
-
-.nav-item img {
-  position: absolute;
-}
-
-.nav-item h2 {
+.realisation .gallery .gallery-project h3 {
   color: #fff;
+}
+.realisation .gallery .gallery-project .tag-category {
   position: relative;
-  padding: 25px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.realisation .gallery .gallery-project .tag-category img {
+  box-sizing: content-box;
+}
+.realisation .gallery .gallery-project .tag-category h5 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 200;
+  color: #fff;
+}
+.realisation .gallery .gallery-project .project-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.realisation .gallery .gallery-project .project-content .text-container {
+  width: 40%;
+}
+.realisation .gallery .gallery-project .project-content .text-container h4 {
+  margin-bottom: 10px;
+}
+.realisation .gallery .gallery-project .project-content .visual-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .realisation {
+    margin-top: 40px;
+    border-top: solid #fff;
+  }
+  .realisation h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .realisation .gallery {
+    display: block;
+  }
+  .realisation .gallery .gallery-project {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+  }
+  .realisation .gallery .gallery-project h3 {
+    font-size: 16px;
+  }
+  .realisation .gallery .gallery-project h4, .realisation .gallery .gallery-project p {
+    font-size: 14px;
+  }
+  .realisation .gallery .gallery-project .visual-container {
+    gap: 5px;
+  }
+  .realisation .gallery .gallery-project .project-content {
+    margin-top: 15px;
+  }
+}
 h2 {
   color: #1D1D1D;
   text-align: center;
   font-size: 40px;
-  margin: auto;
+  margin: 40px 0;
 }
 
 .skills-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
-.skills-container .skills {
+.skills-container .bloc {
   width: 60%;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
 }
-.skills-container .skills ul {
+.skills-container .bloc ul {
   margin-block-start: 0;
 }
-.skills-container .skills .tag-name {
+.skills-container .name {
   position: relative;
 }
-.skills-container .skills .tag-name h3 {
+.skills-container .name h3 {
   color: #fff;
   position: absolute;
   top: 15px;
   left: 20px;
 }
-.skills-container .skills .tag-skill {
+.skills-container .tag {
   position: relative;
 }
-.skills-container .skills .tag-skill h4 {
+.skills-container .tag h4 {
   color: #fff;
   position: absolute;
   top: 15px;
   left: 20px;
 }
-.skills-container .services {
-  width: 40%;
-}
-.skills-container .list-services {
+.skills-container .bloc-services {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
-.skills-container .list-services .tag-service {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills-container .bloc-services .name {
   position: relative;
 }
-.skills-container .list-services .tag-service h4 {
-  padding: 0 5px;
-  white-space: pre-wrap;
-  color: #fff;
-  font-size: 12px;
+.skills-container .bloc-services .name img {
+  width: 200px;
+}
+.skills-container .bloc-services .name h3 {
   position: absolute;
-  text-align: center;
+  max-width: auto;
+  font-size: 16px;
 }
 
-.about-container h2 {
+@media only screen and (max-width: 768px) {
+  h2 {
+    color: #fff;
+    font-size: 24px;
+  }
+  .skills-container {
+    width: 100%;
+    margin: 0 20px;
+  }
+  .skills-container .skills {
+    width: 100%;
+  }
+  .skills-container .skills .tag-name img {
+    max-width: 75%;
+  }
+  .skills-container .skills .tag-name h3 {
+    font-size: 12px;
+  }
+  .skills-container .skills .tag-skill {
+    position: relative;
+  }
+  .skills-container .skills .tag-skill img {
+    max-width: 75%;
+  }
+  .skills-container .skills .tag-skill h4 {
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  .skills-container .services {
+    width: 40%;
+  }
+  .skills-container .list-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.about-container .photo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.about-container p {
+  margin: auto;
+  font-weight: 100;
   color: #fff;
-  text-align: center;
-  font-size: 40px;
-  margin: 50px;
+  text-align: justify;
+  max-width: 600px;
 }/*# sourceMappingURL=main.css.map */

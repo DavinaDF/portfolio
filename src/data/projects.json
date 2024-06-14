@@ -1,13 +1,28 @@
 [    
     {
         "id":1,
-        "category": "Front-end",
+        "category": "Front-end", 
         "client": "Argent Bank",
         "date": "2024-05-01",
         "link": "https://github.com/DavinaDF/ArgentBank-website.git",
         "title": "Application bancaire en React Redux Toolkit",
-        "image": "./Apercu-ArgentBank.png",
-        "description":"Savoir gérer le state management d'une application complexe, comprendre l'utilité de Redux Toolkit, pouvoir documenter les routes API, et anticiper les liens avec la bases de données."
+        "image": "./ArgentBank.png",
+        "skills": [
+            "HTML/CSS",
+            "React",
+            "Redux Toolkit",
+            "API REST",
+            "Documentation Swagger",
+            "Responsive"
+        ],
+        "notions": [
+            "Node.js",
+            "MongoDB",
+            "Postman",
+            "Figma",
+            "Github"
+        ],
+        "description":"Développement front-end d'une application bancaire responsive en utilisant React et Redux. Affichage des données du back-end sur l'interface via des appels API. Configuration des routes API pour la communication client/serveur. Gestion des données avec Redux pour assurer le fonctionnement du front."
     },
     {
         "id":2,
@@ -16,8 +31,20 @@
         "date": "2024-03-07",
         "link": "https://github.com/DavinaDF/P8.git",
         "title": "Développement front-end avec React",
-        "image": "./Apercu-Kasa.png",
-        "description":"Développer une interface web front-end avec Sass et React, en utilisant la logique des composants React, et la navigation React Router"
+        "image": "./Kasa.png",
+        "skills": [
+            "HTML/CSS",
+            "SASS",
+            "React et React Router",
+            "Responsive"
+        ],
+        "notions": [
+            "Node.js",
+            "Fichier JSON",
+            "Figma",
+            "Github"
+        ],
+        "description":"Développement d'une interface web front-end responsive avec Sass et React, en utilisant la logique des composants React, et la navigation entre les pages de l'application avec React Router. Création d'animation CSS."
     },
     {
         "id":3,
@@ -26,17 +53,41 @@
         "date": "2019-05-01",
         "link": "",
         "title": "Création d'une boutique en ligne",
-        "image": "./Apercu-sweatit.png",
-        "description":"Création d'une boutique en ligne avec Wix."
+        "image": "./Sweatit.png",
+        "skills": [
+            "Recherche utilisateurs",
+            "Wireframe",
+            "Charte graphique",
+            "Boutique en ligne",
+            "Wix"
+        ],
+        "notions": [
+            "SEO",
+            "Données analytiques",
+            "Gestion de projet"
+        ],
+        "description":"Création d'une boutique en ligne avec Wix pour la marque de vêtements que j'ai créé."
     },
     {
         "id":4,
         "category": "CMS",
         "client": "Maison Bolze",
         "date": "2023-04-01",
-        "link": "",
+        "link": "https://maisonbolze.com",
         "title": "Création d'une boutique en ligne",
-        "image": "./Apercu-maisonbolze.png",
-        "description":"Création d'une boutique en ligne avec Wix."
+        "image": "./MaisonBolze.png",
+        "skills": [
+            "Audit UX",
+            "Formation/Accompagnement",
+            "Boutique en ligne",
+            "Wordpress"
+        ],
+        "notions": [
+            "SEO",
+            "Données analytiques",
+            "Maintenance site",
+            "Gestion de projet"
+        ],
+        "description":"Accompagnement à la création d'une boutique en ligne avec Wordpress. Mise en place de la structure du site, des éléments de la boutique et du paiement. "
     }
 ]
