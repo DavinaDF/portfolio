@@ -18,6 +18,10 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #1D1D1D;
   font-family: "JetBrains Mono";
