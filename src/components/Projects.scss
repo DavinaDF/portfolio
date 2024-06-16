@@ -209,32 +209,39 @@
     
     .realisation{
 
-        margin-top: 40px;
+        margin-top: 80px;
         border-top : solid #fff;
         h2 {
             font-size: 24px;
-            margin: 0;
+            margin: 20px 0;
         }
 
-        .gallery {
-            display: block;
+        .gallery-project {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
 
-            .gallery-project {
+            .card-project {
                 margin: auto;
                 width: 80%;
-                height: 100%;
 
                 h3 {
-                    font-size: 16px;
+                    position: absolute;
+                    top: 5px;
                 }
-                h4, p {
-                    font-size: 14px;
+                .preview{
+                    margin-top: 20px;
+                    width: 80%;
                 }
-                .visual-container{
-                    gap: 5px;
-                }
-                .project-content{
-                    margin-top: 15px;
+                .actions-modal{
+                    position: absolute;
+                    top: 5px;
+                    right: 15px;
+    
+                    img {
+                        width: 20px;
+                        margin: 2px;
+                    }
                 }
             }
         }

@@ -126,9 +126,9 @@ body {
 }
 
 .skills-home {
+  z-index: 1;
   background-color: #fff;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  margin: auto;
 }
 
 .about {
@@ -228,6 +228,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 .realisation h2 {
   color: #fff;
@@ -236,19 +237,18 @@ footer {
   margin: 50px;
 }
 .realisation .list-project {
-  max-width: 1024px;
   display: grid;
   justify-content: center;
 }
-.realisation .gallery {
-  margin: auto;
+.realisation .gallery-project {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.realisation .gallery .gallery-project {
+.realisation .gallery-project .card-project {
+  position: relative;
   width: 500px;
-  height: 500px;
+  height: auto;
   background-image: url("/Modal.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -257,70 +257,196 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.realisation .gallery .gallery-project h3 {
+.realisation .gallery-project .card-project h3 {
   color: #fff;
 }
-.realisation .gallery .gallery-project .tag-category {
+.realisation .gallery-project .card-project .preview {
+  margin-top: 25px;
+}
+.realisation .gallery-project .card-project .actions-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.realisation .gallery-project .card-project .actions-modal img {
+  width: 20px;
+  margin: 4px;
+}
+.realisation .gallery-project .card-project .tag-category {
   position: relative;
   width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.realisation .gallery .gallery-project .tag-category img {
+.realisation .gallery-project .card-project .tag-category img {
   box-sizing: content-box;
+  margin-top: 20px;
 }
-.realisation .gallery .gallery-project .tag-category h5 {
+.realisation .gallery-project .card-project .tag-category h5 {
   position: absolute;
   font-size: 10px;
   font-weight: 200;
   color: #fff;
 }
-.realisation .gallery .gallery-project .project-content {
+.realisation .gallery-project .card-project .project-content {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
 }
-.realisation .gallery .gallery-project .project-content .text-container {
+.realisation .gallery-project .card-project .project-content .text-container {
   width: 40%;
 }
-.realisation .gallery .gallery-project .project-content .text-container h4 {
+.realisation .gallery-project .card-project .project-content .text-container h4 {
   margin-bottom: 10px;
 }
-.realisation .gallery .gallery-project .project-content .visual-container {
+.realisation .gallery-project .card-project .project-content .visual-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-container {
+  position: fixed;
+  z-index: 100;
+  margin: auto;
+  width: 800px;
+  height: 670px;
+  background-image: url("/Modal.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.modal-container .modal-header h3 {
+  position: absolute;
+  color: #fff;
+  left: 45%;
+  top: 25px;
+}
+.modal-container .modal-header .actions-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.modal-container .modal-header .actions-modal img {
+  cursor: pointer;
+  width: 30px;
+  margin: 5px;
+}
+.modal-container .modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  gap: 20px;
+}
+.modal-container .modal-content .left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.modal-container .modal-content .left .modal-image {
+  width: 80%;
+  border: solid #ccc;
+  box-shadow: 2px -2px 2px 2px rgba(149, 149, 149, 0.4);
+}
+.modal-container .modal-content .left p {
+  font-size: 14px;
+  text-align: justify;
+  width: 80%;
+}
+.modal-container .modal-content .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.modal-container .modal-content .right .modal-category {
+  position: relative;
+}
+.modal-container .modal-content .right .modal-category img {
+  width: 100px;
+}
+.modal-container .modal-content .right .modal-category h4 {
+  position: absolute;
+  left: 0;
+  color: #fff;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  font-size: 12px;
+}
+.modal-container .modal-content .right h5 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.modal-container .modal-content .right .project-link {
+  position: relative;
+  cursor: pointer;
+}
+.modal-container .modal-content .right .project-link img {
+  width: 50px;
+}
+.modal-container .modal-content .right .project-link .fa-link {
+  color: #fff;
+  position: absolute;
+  font-size: 24px;
+  top: 10px;
+  left: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .realisation {
-    margin-top: 40px;
+    margin-top: 80px;
     border-top: solid #fff;
   }
   .realisation h2 {
     font-size: 24px;
-    margin: 0;
+    margin: 20px 0;
   }
-  .realisation .gallery {
-    display: block;
+  .realisation .gallery-project {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
-  .realisation .gallery .gallery-project {
+  .realisation .gallery-project .card-project {
     margin: auto;
     width: 80%;
-    height: 100%;
   }
-  .realisation .gallery .gallery-project h3 {
-    font-size: 16px;
+  .realisation .gallery-project .card-project h3 {
+    position: absolute;
+    top: 5px;
   }
-  .realisation .gallery .gallery-project h4, .realisation .gallery .gallery-project p {
-    font-size: 14px;
+  .realisation .gallery-project .card-project .preview {
+    margin-top: 20px;
+    width: 80%;
   }
-  .realisation .gallery .gallery-project .visual-container {
-    gap: 5px;
+  .realisation .gallery-project .card-project .actions-modal {
+    position: absolute;
+    top: 5px;
+    right: 15px;
   }
-  .realisation .gallery .gallery-project .project-content {
-    margin-top: 15px;
+  .realisation .gallery-project .card-project .actions-modal img {
+    width: 20px;
+    margin: 2px;
   }
 }
 h2 {
@@ -331,13 +457,12 @@ h2 {
 }
 
 .skills-container {
+  z-index: 1;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
 }
 .skills-container .bloc {
-  width: 60%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -363,18 +488,23 @@ h2 {
   left: 20px;
 }
 .skills-container .bloc-services {
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.skills-container .bloc-services .name {
+.skills-container .bloc-services .name-service {
   position: relative;
 }
-.skills-container .bloc-services .name img {
+.skills-container .bloc-services .name-service img {
   width: 200px;
 }
-.skills-container .bloc-services .name h3 {
+.skills-container .bloc-services .name-service h3 {
   position: absolute;
-  max-width: auto;
+  left: 0;
+  color: #fff;
+  top: 5px;
+  left: 5px;
+  padding: 10px;
   font-size: 16px;
 }
 
@@ -386,6 +516,8 @@ h2 {
   .skills-container {
     width: 100%;
     margin: 0 20px;
+    display: flex;
+    flex-direction: column;
   }
   .skills-container .skills {
     width: 100%;

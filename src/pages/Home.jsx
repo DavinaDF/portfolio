@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-import illustrationHome from "../assets/images/Home-illustration-computer.png"
+import illustrationHome from "../assets/images/Home-illustration-computer.webp"
 import backMedia from "../assets/images/circle_green.png";
 import ProjectPreview from "../components/ProjectPreview";
 import Skills from "../sections/Skills";

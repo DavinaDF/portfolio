@@ -6,7 +6,7 @@
         "date": "2024-05-01",
         "link": "https://github.com/DavinaDF/ArgentBank-website.git",
         "title": "Application bancaire en React Redux Toolkit",
-        "image": "./ArgentBank.png",
+        "image": "./ArgentBank.webp",
         "skills": [
             "HTML/CSS",
             "React",
@@ -31,7 +31,7 @@
         "date": "2024-03-07",
         "link": "https://github.com/DavinaDF/P8.git",
         "title": "Développement front-end avec React",
-        "image": "./Kasa.png",
+        "image": "./Kasa.webp",
         "skills": [
             "HTML/CSS",
             "SASS",
@@ -53,7 +53,7 @@
         "date": "2019-05-01",
         "link": "",
         "title": "Création d'une boutique en ligne",
-        "image": "./Sweatit.png",
+        "image": "./Sweatit.webp",
         "skills": [
             "Recherche utilisateurs",
             "Wireframe",
@@ -75,7 +75,7 @@
         "date": "2023-04-01",
         "link": "https://maisonbolze.com",
         "title": "Création d'une boutique en ligne",
-        "image": "./MaisonBolze.png",
+        "image": "./MaisonBolze.webp",
         "skills": [
             "Audit UX",
             "Formation/Accompagnement",

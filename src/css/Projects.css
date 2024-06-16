@@ -189,31 +189,37 @@
 
 @media screen and (max-width: 768px) {
   .realisation {
-    margin-top: 40px;
+    margin-top: 80px;
     border-top: solid #fff;
   }
   .realisation h2 {
     font-size: 24px;
-    margin: 0;
+    margin: 20px 0;
   }
-  .realisation .gallery {
-    display: block;
+  .realisation .gallery-project {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
-  .realisation .gallery .gallery-project {
+  .realisation .gallery-project .card-project {
     margin: auto;
     width: 80%;
-    height: 100%;
   }
-  .realisation .gallery .gallery-project h3 {
-    font-size: 16px;
+  .realisation .gallery-project .card-project h3 {
+    position: absolute;
+    top: 5px;
   }
-  .realisation .gallery .gallery-project h4, .realisation .gallery .gallery-project p {
-    font-size: 14px;
+  .realisation .gallery-project .card-project .preview {
+    margin-top: 20px;
+    width: 80%;
   }
-  .realisation .gallery .gallery-project .visual-container {
-    gap: 5px;
+  .realisation .gallery-project .card-project .actions-modal {
+    position: absolute;
+    top: 5px;
+    right: 15px;
   }
-  .realisation .gallery .gallery-project .project-content {
-    margin-top: 15px;
+  .realisation .gallery-project .card-project .actions-modal img {
+    width: 20px;
+    margin: 2px;
   }
 }/*# sourceMappingURL=Projects.css.map */
