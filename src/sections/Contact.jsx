@@ -1,39 +1,43 @@
-import {useRef} from 'react';
-import emailjs from '@emailjs/browser';
+import { useState } from "react";
 
 const Contact = () => {
+  const [result, setResult] = useState("");
 
-    const form = useRef();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    formData.append("access_key", "17d060dc-3e21-44ea-a1fe-e4e5135b405d");
 
-        emailjs
-        .sendForm('service_bqabrtp', 'template_negqfni', form.current, {
-            publicKey: 'zRKk1ME9l1tRJg0qM',
-        })
-        .then(
-            () => {
-            console.log('SUCCESS!');
-            e.target.reset();
-            },
-            (error) => {
-            console.log('FAILED...', error.text);
-            },
-        );
-    };
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
 
-    return (
-        <form className="contact-form" ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-        </form>
-    );
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Le message a bien été envoyé !");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+  return (
+    <div>
+      <form onSubmit={onSubmit}>
+        <input type="text" name="name" required />
+        <input type="email" name="email" required />
+        <textarea name="message" required></textarea>
+
+        <button type="submit">ENVOYER</button>
+      </form>
+      <span>{result}</span>
+    </div>
+  );
 };
 
 export default Contact;

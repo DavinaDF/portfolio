@@ -1,93 +1,94 @@
-[    
-    {
-        "id":1,
-        "category": "Front-end", 
-        "client": "Argent Bank",
-        "date": "2024-05-01",
-        "link": "https://github.com/DavinaDF/ArgentBank-website.git",
-        "title": "Application bancaire en React Redux Toolkit",
-        "image": "./ArgentBank.webp",
-        "skills": [
-            "HTML/CSS",
-            "React",
-            "Redux Toolkit",
-            "API REST",
-            "Documentation Swagger",
-            "Responsive",
-            "Figma",
-            "Github"
-        ],
-        "notions": [
-            "Node.js",
-            "MongoDB",
-            "Postman"
-        ],
-        "description":"Développement front-end d'une application bancaire responsive en utilisant React et Redux. Affichage des données du back-end sur l'interface via des appels API. Configuration des routes API pour la communication client/serveur. Gestion des données avec Redux pour assurer le fonctionnement du front."
-    },
-    {
-        "id":2,
-        "category": "Front-end",
-        "client": "Kasa",
-        "date": "2024-03-07",
-        "link": "https://github.com/DavinaDF/P8.git",
-        "title": "Développement front-end avec React",
-        "image": "./Kasa.webp",
-        "skills": [
-            "HTML/CSS",
-            "SASS",
-            "React et React Router",
-            "Responsive",
-            "Figma",
-            "Github"
-        ],
-        "notions": [
-            "Node.js",
-            "Fichier JSON"
-        ],
-        "description":"Développement d'une interface web front-end responsive avec Sass et React, en utilisant la logique des composants React, et la navigation entre les pages de l'application avec React Router. Création d'animation CSS."
-    },
-    {
-        "id":3,
-        "category": "CMS",
-        "client": "Sweat it",
-        "date": "2019-05-01",
-        "link": "",
-        "title": "Création d'une boutique en ligne",
-        "image": "./Sweatit.webp",
-        "skills": [
-            "Recherche utilisateurs",
-            "Wireframe",
-            "Charte graphique",
-            "Boutique en ligne",
-            "Wix"
-        ],
-        "notions": [
-            "SEO",
-            "Données analytiques",
-            "Gestion de projet"
-        ],
-        "description":"Création d'une boutique en ligne avec Wix pour la marque de vêtements que j'ai créé."
-    },
-    {
-        "id":4,
-        "category": "CMS",
-        "client": "Maison Bolze",
-        "date": "2023-04-01",
-        "link": "https://maisonbolze.com",
-        "title": "Création d'une boutique en ligne",
-        "image": "./MaisonBolze.webp",
-        "skills": [
-            "Audit UX",
-            "Formation/Accompagnement",
-            "Boutique en ligne",
-            "Wordpress"
-        ],
-        "notions": [
-            "SEO",
-            "Données analytiques",
-            "Maintenance site",
-            "Gestion de projet"
-        ],
-        "description":"Accompagnement à la création d'une boutique en ligne avec Wordpress. Mise en place de la structure du site, des éléments de la boutique et du paiement. "
-    }
+[
+  {
+    "id": 5,
+    "category": "Front-end",
+    "client": "Argent Bank",
+    "date": "2024-07-28",
+    "link": "https://github.com/DavinaDF/ArgentBank-website.git",
+    "title": "Application bancaire en React Redux Toolkit",
+    "image": "./ArgentBank.webp",
+    "skills": ["HTML/CSS", "Responsive", "Figma", "Github"],
+    "notions": ["Node.js", "MongoDB", "Postman"],
+    "description": "Développement front-end d'une application bancaire responsive en utilisant React et Redux. Affichage des données du back-end sur l'interface via des appels API. Configuration des routes API pour la communication client/serveur. Gestion des données avec Redux pour assurer le fonctionnement du front."
+  },
+  {
+    "id": 4,
+    "category": "Front-end",
+    "client": "Argent Bank",
+    "date": "2024-05-01",
+    "link": "https://github.com/DavinaDF/ArgentBank-website.git",
+    "title": "Application bancaire en React Redux Toolkit",
+    "image": "./ArgentBank.webp",
+    "skills": [
+      "HTML/CSS",
+      "React",
+      "Redux Toolkit",
+      "API REST",
+      "Documentation Swagger",
+      "Responsive",
+      "Figma",
+      "Github"
+    ],
+    "notions": ["Node.js", "MongoDB", "Postman"],
+    "description": "Développement front-end d'une application bancaire responsive en utilisant React et Redux. Affichage des données du back-end sur l'interface via des appels API. Configuration des routes API pour la communication client/serveur. Gestion des données avec Redux pour assurer le fonctionnement du front."
+  },
+  {
+    "id": 3,
+    "category": "Front-end",
+    "client": "Kasa",
+    "date": "2024-03-07",
+    "link": "https://github.com/DavinaDF/P8.git",
+    "title": "Développement front-end avec React",
+    "image": "./Kasa.webp",
+    "skills": [
+      "HTML/CSS",
+      "SASS",
+      "React et React Router",
+      "Responsive",
+      "Figma",
+      "Github"
+    ],
+    "notions": ["Node.js", "Fichier JSON"],
+    "description": "Développement d'une interface web front-end responsive avec Sass et React, en utilisant la logique des composants React, et la navigation entre les pages de l'application avec React Router. Création d'animation CSS."
+  },
+  {
+    "id": 2,
+    "category": "CMS",
+    "client": "Sweat it",
+    "date": "2019-05-01",
+    "link": "",
+    "title": "Création d'une boutique en ligne",
+    "image": "./Sweatit.webp",
+    "skills": [
+      "Recherche utilisateurs",
+      "Wireframe",
+      "Charte graphique",
+      "Boutique en ligne",
+      "Wix"
+    ],
+    "notions": ["SEO", "Données analytiques", "Gestion de projet"],
+    "description": "Création d'une boutique en ligne avec Wix pour la marque de vêtements que j'ai créé."
+  },
+  {
+    "id": 1,
+    "category": "CMS",
+    "client": "Maison Bolze",
+    "date": "2023-04-01",
+    "link": "https://maisonbolze.com",
+    "title": "Création d'une boutique en ligne",
+    "image": "./MaisonBolze.webp",
+    "skills": [
+      "Audit UX",
+      "Formation/Accompagnement",
+      "Boutique en ligne",
+      "Wordpress"
+    ],
+    "notions": [
+      "SEO",
+      "Données analytiques",
+      "Maintenance site",
+      "Gestion de projet"
+    ],
+    "description": "Accompagnement à la création d'une boutique en ligne avec Wordpress. Mise en place de la structure du site, des éléments de la boutique et du paiement. "
+  }
 ]
