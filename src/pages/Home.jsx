@@ -69,10 +69,10 @@ const Home = () => {
         <h2>A propos</h2>
         <About />
       </div>
-      <div className="contact" id="contact">
+      {/* <div className="contact" id="contact">
         <h2>Me contacter</h2>
         <Contact />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
