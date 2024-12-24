@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import illustrationHome from "../assets/images/Home-illustration-computer.webp";
@@ -74,6 +75,7 @@ const Home = () => {
         <Contact />
       </div> */}
       <Footer />
+      <Analytics />
     </div>
   );
 };
