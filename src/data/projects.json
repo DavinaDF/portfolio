@@ -1,15 +1,27 @@
 [
   {
+    "id": 6,
+    "category": "Front-end",
+    "client": "Mamacam",
+    "date": "2024-07-28",
+    "link": "https://www.mamacam.fr/",
+    "title": "Création et développement d'un site vitrine pour un restaurant bordelais",
+    "image": "./Mamacam.webp",
+    "skills": ["HTML/CSS", "React", "API REST", "Responsive", "Figma"],
+    "notions": ["Wireframe", "SEO", "Données analytiques", "JSON"],
+    "description": "Création de maquettes graphiques et développement d'une application web responsive pour un restaurant. Utilisation d'API pour automatiser l'affichage du menu du jour. Optimisation du référencement naturel pour une meilleure visibilité sur les moteurs de recherche."
+  },
+  {
     "id": 5,
     "category": "Front-end",
-    "client": "Argent Bank",
+    "client": "Femmes magiciennes",
     "date": "2024-07-28",
     "link": "https://github.com/DavinaDF/ArgentBank-website.git",
-    "title": "Application bancaire en React Redux Toolkit",
-    "image": "./ArgentBank.webp",
-    "skills": ["HTML/CSS", "Responsive", "Figma", "Github"],
-    "notions": ["Node.js", "MongoDB", "Postman"],
-    "description": "Développement front-end d'une application bancaire responsive en utilisant React et Redux. Affichage des données du back-end sur l'interface via des appels API. Configuration des routes API pour la communication client/serveur. Gestion des données avec Redux pour assurer le fonctionnement du front."
+    "title": "Création et développement landing page pour évènement",
+    "image": "./Landing.webp",
+    "skills": ["HTML/CSS", "Responsive", "Figma"],
+    "notions": ["Wireframe", "SEO"],
+    "description": "Création de maquettes graphiques et développement d'une landing page responsive pour un évènement. Optimisation du référencement naturel pour une meilleure visibilité sur les moteurs de recherche."
   },
   {
     "id": 4,
