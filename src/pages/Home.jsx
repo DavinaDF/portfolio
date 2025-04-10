@@ -8,6 +8,7 @@ import ProjectPreview from "../components/ProjectPreview";
 import Skills from "../sections/Skills";
 import Contact from "../sections/Contact";
 import About from "../sections/About";
+import ImageSlider from "../components/ImageSlider";
 
 const Home = () => {
   return (
@@ -61,7 +62,8 @@ const Home = () => {
       </div>
       <div className="realisation" id="projects">
         <h2>Mes réalisations</h2>
-        <ProjectPreview />
+        <ImageSlider />
+        {/* <ProjectPreview /> */}
       </div>
       <div className="skills-home" id="skills">
         <Skills />

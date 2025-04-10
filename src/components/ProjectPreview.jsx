@@ -34,10 +34,21 @@ const ProjectPreview = () => {
         //     <h3>{project.client}</h3>
         //     <img className="preview" src={project.image} alt="Visuel projet" />
         // </div>
-        <div className="card" key={project.id}>
+        <div
+          className="card"
+          key={project.id}
+          // onClick={(e) => {
+          //   e.preventDefault();
+          //   handleDisplayModal(project);
+          // }}
+        >
           <input type="radio" name="slide" id={project.id} checked />
-          <label htmlFor={project.id} className="content">
-            <img src={project.image} alt="Visuel projet" />
+          <label
+            htmlFor={project.id}
+            className="content"
+            style={{ backgroundImage: `url(${project.image})` }}
+          >
+            {/* <img src={project.image} alt="Visuel projet" /> */}
             <div className="description">
               <h3>{project.client}</h3>
               <p>{project.title}</p>
