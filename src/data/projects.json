@@ -1,6 +1,6 @@
 [
   {
-    "id": 6,
+    "id": 4,
     "category": "Front-end",
     "client": "Mamacam",
     "date": "2024-07-28",
@@ -12,7 +12,7 @@
     "description": "Création de maquettes graphiques et développement d'une application web responsive pour un restaurant. Utilisation d'API pour automatiser l'affichage du menu du jour. Optimisation du référencement naturel pour une meilleure visibilité sur les moteurs de recherche."
   },
   {
-    "id": 5,
+    "id": 3,
     "category": "Front-end",
     "client": "Femmes magiciennes",
     "date": "2024-07-28",
@@ -23,29 +23,9 @@
     "notions": ["Wireframe", "SEO"],
     "description": "Création de maquettes graphiques et développement d'une landing page responsive pour un évènement. Optimisation du référencement naturel pour une meilleure visibilité sur les moteurs de recherche."
   },
+
   {
-    "id": 4,
-    "category": "Front-end",
-    "client": "Argent Bank",
-    "date": "2024-05-01",
-    "link": "https://github.com/DavinaDF/ArgentBank-website.git",
-    "title": "Application bancaire en React Redux Toolkit",
-    "image": "./ArgentBank.webp",
-    "skills": [
-      "HTML/CSS",
-      "React",
-      "Redux Toolkit",
-      "API REST",
-      "Documentation Swagger",
-      "Responsive",
-      "Figma",
-      "Github"
-    ],
-    "notions": ["Node.js", "MongoDB", "Postman"],
-    "description": "Développement front-end d'une application bancaire responsive en utilisant React et Redux. Affichage des données du back-end sur l'interface via des appels API. Configuration des routes API pour la communication client/serveur. Gestion des données avec Redux pour assurer le fonctionnement du front."
-  },
-  {
-    "id": 3,
+    "id": 2,
     "category": "Front-end",
     "client": "Kasa",
     "date": "2024-03-07",
@@ -64,7 +44,7 @@
     "description": "Développement d'une interface web front-end responsive avec Sass et React, en utilisant la logique des composants React, et la navigation entre les pages de l'application avec React Router. Création d'animation CSS."
   },
   {
-    "id": 2,
+    "id": 1,
     "category": "CMS",
     "client": "Sweat it",
     "date": "2019-05-01",
@@ -82,7 +62,7 @@
     "description": "Création d'une boutique en ligne avec Wix pour la marque de vêtements que j'ai créé."
   },
   {
-    "id": 1,
+    "id": 0,
     "category": "CMS",
     "client": "Maison Bolze",
     "date": "2023-04-01",

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import projectsData from "../../src/data/projects.json";
+import { h3 } from "motion/react-client";
 
 const ImageSlider = () => {
   const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4]);
@@ -24,10 +25,10 @@ const ImageSlider = () => {
     });
   };
 
-  const images = projectsData.map((project) => {
-    project.image;
-    console.log(project.image);
-  });
+  // const images = projectsData.map((project) => {
+  //   project.image;
+  //   console.log(project.image);
+  // });
 
   const positions = ["center", "left1", "left", "right", "right1"];
 
@@ -39,20 +40,32 @@ const ImageSlider = () => {
     right1: { x: "50%", scale: 0.7, zIndex: 3 },
   };
   return (
-    <div className="gallery-project flex items-center flex-col justify-center bg-black h-screen">
+    <div className="project-section">
       <div className="slider">
         {projectsData.map((project) => (
-          <motion.img
-            key={project.id}
-            src={project.image}
-            alt={project.client}
-            className="rounded-[12px]"
+          <div
+            className={`slide ${positions[positionIndexes[project.id]]}`}
             initial="center"
             animate={positions[positionIndexes[project.id]]}
             variants={imageVariants}
             transition={{ duration: 0.5 }}
             style={{ width: "40%", position: "absolute" }}
-          />
+          >
+            <div className="info">
+              <h3>{project.client}</h3>
+              <p>{project.description}</p>
+            </div>
+            <motion.img
+              key={project.id}
+              src={project.image}
+              alt={project.client}
+              initial="center"
+              animate={positions[positionIndexes[project.id]]}
+              variants={imageVariants}
+              transition={{ duration: 0.5 }}
+              style={{ width: "40%", position: "absolute" }}
+            />
+          </div>
         ))}
       </div>
       <div className="slide-button flex flex-row gap-3">
