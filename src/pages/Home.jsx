@@ -61,17 +61,17 @@ const Home = () => {
         </div>
       </div>
       <div className="realisation" id="projects">
-        <h2>Mes réalisations</h2>
-        <ImageSlider />
+        <h2>Le site est actuellement en construction !</h2>
+        {/* <ImageSlider /> */}
         {/* <ProjectPreview /> */}
       </div>
-      <div className="skills-home" id="skills">
+      {/* <div className="skills-home" id="skills">
         <Skills />
       </div>
       <div className="about" id="about">
         <h2>A propos</h2>
         <About />
-      </div>
+      </div> */}
       {/* <div className="contact" id="contact">
         <h2>Me contacter</h2>
         <Contact />

@@ -43,29 +43,26 @@ const ImageSlider = () => {
     <div className="project-section">
       <div className="slider">
         {projectsData.map((project) => (
-          <div
+          <motion.div
             className={`slide ${positions[positionIndexes[project.id]]}`}
+            key={project.id}
+            src={project.image}
+            alt={project.client}
             initial="center"
             animate={positions[positionIndexes[project.id]]}
             variants={imageVariants}
             transition={{ duration: 0.5 }}
-            style={{ width: "40%", position: "absolute" }}
+            style={{
+              width: "40%",
+              position: "absolute",
+              backgroundImage: `url(${project.image})`,
+            }}
           >
             <div className="info">
               <h3>{project.client}</h3>
               <p>{project.description}</p>
             </div>
-            <motion.img
-              key={project.id}
-              src={project.image}
-              alt={project.client}
-              initial="center"
-              animate={positions[positionIndexes[project.id]]}
-              variants={imageVariants}
-              transition={{ duration: 0.5 }}
-              style={{ width: "40%", position: "absolute" }}
-            />
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="slide-button flex flex-row gap-3">
