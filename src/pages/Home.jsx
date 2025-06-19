@@ -9,6 +9,8 @@ import Skills from "../sections/Skills";
 import Contact from "../sections/Contact";
 import About from "../sections/About";
 import ImageSlider from "../components/ImageSlider";
+import Service from "../components/Service";
+import Type from "../components/Type";
 
 const Home = () => {
   return (
@@ -16,23 +18,29 @@ const Home = () => {
       <div className="first-view">
         <div className="left-part">
           <div className="text">
-            <h1>Bienvenu dans mon univers !</h1>
+            <h1>Hello World !</h1>
+            <h2>
+              <Type />
+            </h2>
             <p>
-              Je suis <strong>Davina Crahet</strong>,{" "}
-              <strong>UX designer</strong> et{" "}
-              <strong>développeuse web front-end</strong>. <br />
+              {" "}
               <br />
-              Concevons ensemble des <strong>sites</strong> qui vous
-              correspondent tout en étant adaptés à vos{" "}
-              <strong>utilisateurs</strong>.
+              <br />
+              Je vous accompagne dans vos projets de refonte ou création de
+              site, en me basant sur vos <strong>besoins</strong>, vos{" "}
+              <strong>contraintes</strong> et également sur l’analyse des
+              besoins, usages et habitudes de vos utilisateurs. Concevons
+              ensemble des <strong>sites</strong> qui vous correspondent tout en
+              étant adaptés à vos <strong>utilisateurs</strong>.
             </p>
+            <div></div>
           </div>
           <img
-            src={illustrationHome}
+            src="/code-illustration-3d.png"
             alt="Illustration ordinateur plante tasse"
           />
         </div>
-        <div className="right-part">
+        {/* <div className="right-part">
           <div className="navigation">
             <Header />
           </div>
@@ -58,7 +66,10 @@ const Home = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+      </div>
+      <div className="presta" id="services">
+        <Service />
       </div>
       <div className="realisation" id="projects">
         <h2>Le site est actuellement en construction !</h2>
