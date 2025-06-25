@@ -11,66 +11,37 @@ import About from "../sections/About";
 import ImageSlider from "../components/ImageSlider";
 import Service from "../components/Service";
 import Type from "../components/Type";
+import Particle from "../components/Particle";
 
 const Home = () => {
   return (
     <div className="home">
+      <Header />
+      {/* <Particle /> */}
       <div className="first-view">
         <div className="left-part">
-          <div className="text">
-            <h1>Hello World !</h1>
-            <h2>
-              <Type />
-            </h2>
+          <h2 className="titre">
+            <Type />
+          </h2>
+          <div className="texte">
             <p>
-              {" "}
-              <br />
-              <br />
               Je vous accompagne dans vos projets de refonte ou création de
-              site, en me basant sur vos <strong>besoins</strong>, vos{" "}
-              <strong>contraintes</strong> et également sur l’analyse des
-              besoins, usages et habitudes de vos utilisateurs. Concevons
-              ensemble des <strong>sites</strong> qui vous correspondent tout en
-              étant adaptés à vos <strong>utilisateurs</strong>.
+              site, en me basant sur vos <strong>besoins</strong>, vos
+              <strong> contraintes</strong> et également sur l’analyse des
+              besoins, usages et habitudes de vos utilisateurs.
             </p>
-            <div></div>
           </div>
+        </div>
+        <div className="right-part">
           <img
-            src="/code-illustration-3d.png"
-            alt="Illustration ordinateur plante tasse"
+            src="/code-illustration-3d.webp"
+            alt="Illustration navigateur développement 3D"
           />
         </div>
-        {/* <div className="right-part">
-          <div className="navigation">
-            <Header />
-          </div>
-          <div className="social-media">
-            <div className="link-github">
-              <a
-                href="https://github.com/DavinaDF"
-                target="_blank"
-                className="link-github"
-              >
-                <img src={backMedia} alt="icon et lien vers github" />
-                <i className="fa-brands fa-github"></i>
-              </a>
-            </div>
-            <div className="link-linkedin">
-              <a
-                href="https://www.linkedin.com/in/davina-crahet-83888847/"
-                target="_blank"
-                className="link-linkedin"
-              >
-                <img src={backMedia} alt="icon et lien vers linkedin" />
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
-        </div> */}
       </div>
-      <div className="presta" id="services">
+      {/* <div className="presta" id="services">
         <Service />
-      </div>
+      </div> */}
       <div className="realisation" id="projects">
         <h2>Le site est actuellement en construction !</h2>
         {/* <ImageSlider /> */}

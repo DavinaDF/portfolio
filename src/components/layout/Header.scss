@@ -1,0 +1,74 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    margin: 0 20px;
+    color: $color-button;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+  }
+  .link-container {
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    .menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      a {
+        h2 {
+          margin: auto;
+          padding: 4px 0;
+          width: 180px;
+          background-color: $color-contrast-main;
+          text-transform: uppercase;
+          font-weight: 900;
+          font-size: 14px;
+          letter-spacing: 2px;
+          color: $color-text;
+          border-radius: 10px;
+          border: 6px solid $color-contrast-main;
+          -webkit-box-shadow: inset 3px 3px 5px 4px #b68002;
+          box-shadow: inset 3px 3px 5px 4px #b68002;
+        }
+      }
+      a:hover {
+        h2 {
+          background-color: $color-button;
+          border: 6px solid $color-button;
+          -webkit-box-shadow: inset 3px 3px 5px 4px #94ae97;
+          box-shadow: inset 3px 3px 5px 4px #628565;
+        }
+      }
+    }
+    .social {
+      margin: auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .social-item {
+        height: 100%;
+
+        .fa-brands {
+          font-size: 24px;
+          color: $color-text;
+        }
+        .fa-brands:hover {
+          color: $color-button;
+        }
+      }
+    }
+  }
+}

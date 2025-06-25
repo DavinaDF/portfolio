@@ -1,103 +1,60 @@
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+}
+
 .first-view {
-  min-height: 100vh;
+  overflow: hidden;
+  height: 100vh;
   max-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
-}
+  justify-content: space-between;
 
-.left-part {
-  min-height: 100vh;
-  width: 100%;
-  background-color: #1d1d1d;
-  display: flex;
-  justify-content: space-around;
-
-  .text {
-    width: 50%;
-    margin: 0 50px;
-
-    h1,
-    h2 {
-      color: #fff;
-      text-align: left;
-      font-family: "JetBrains Mono", sans-serif;
-      font-weight: 300;
-      font-size: 24px;
-      margin: 40px auto;
-    }
-
-    p {
-      color: #fff;
-      font-family: "JetBrains Mono";
-      font-size: 24px;
-      font-weight: 100;
-      margin: auto;
-    }
-  }
-
-  img {
-    width: 100%;
-    object-fit: contain;
-    margin-bottom: 0px;
-  }
-}
-
-.right-part {
-  min-height: 100vh;
-  width: 40%;
-  padding: 20px 10px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .nav-container {
-    width: 100%;
+  .left-part {
+    width: 80%;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-  }
-
-  .nav-item {
-    margin-bottom: 50px;
-    position: relative;
-    display: flex;
-    align-items: center;
-
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
     h2 {
-      font-size: 30px;
       color: #fff;
-      position: absolute;
-      left: 20px;
+      text-align: right;
+      font-family: "JetBrains Mono", sans-serif;
+      font-weight: 300;
+      font-size: 30px;
+    }
+
+    .texte {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      p {
+        color: #fff;
+        font-family: "JetBrains Mono";
+        font-size: 20px;
+        font-weight: 100;
+        text-align: right;
+      }
     }
   }
 
-  .social-media {
+  .right-part {
+    width: 100%;
+    overflow: hidden;
     display: flex;
-    gap: 50px;
-    color: #fff;
-
-    .link-github,
-    .link-linkedin {
-      width: 87px;
-      height: 84px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
-      img {
-        position: absolute;
-      }
-      i {
-        color: #fff;
-        position: absolute;
-        font-size: 50px;
-      }
+    justify-content: center;
+    img {
+      object-fit: contain;
+      max-width: 500px;
     }
   }
 }
