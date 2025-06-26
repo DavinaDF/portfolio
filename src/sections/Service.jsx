@@ -7,7 +7,7 @@ const Service = () => {
         <h3 className="service-card-title">UX/UI DESIGN</h3>
         <div className="service-card-content">
           <p>
-            étude des usages et des besoins utilisateurs afin de comprendre,
+            Étude des usages et des besoins utilisateurs afin de comprendre,
             évaluer et améliorer l’expérience de votre site
           </p>
           <p>

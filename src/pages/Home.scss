@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  background-image: url("/public/bg.webp");
+  background-image: url("/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -8,17 +8,16 @@
 
   .first-view {
     overflow: hidden;
-    width: 100%;
     height: 100vh;
     display: flex;
 
     .left-part {
-      background-color: $color-button;
-      border-radius: 20px;
-      max-width: 25vw;
+      background-color: $color-contrast-dark;
+      border-radius: 30px;
+      box-shadow: -2px 2px $color-contrast-second;
+      max-width: 30vw;
       padding: 50px;
       margin: auto;
-      margin-right: 10vh;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -41,33 +40,34 @@
           color: #fff;
           font-family: "JetBrains Mono";
           font-size: 18px;
-          font-weight: 300;
+          font-weight: 200;
           text-align: right;
           line-height: 1.8rem;
+        }
+        strong {
+          opacity: 80%;
+          opacity: 70%;
+          font-weight: 800;
+          font-size: 20px;
         }
       }
     }
 
     .right-part {
-      width: 45%;
-      margin-left: 10vh;
       overflow: hidden;
-      display: flex;
-      justify-content: flex-start;
+      margin-top: 40vh;
       img {
-        margin-top: 20vh;
+        margin-right: 20vh;
         object-fit: contain;
-        max-width: 75vh;
+        max-width: 60vh;
       }
     }
   }
-
-  .contact-bottom {
-    h2 {
-      color: $color-contrast-dark;
-    }
+  section.part {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
   }
-
   footer {
     height: 30px;
     background-color: #fff;

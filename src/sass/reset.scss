@@ -1,3 +1,9 @@
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
 * {
   margin: 0;
 }
@@ -33,6 +39,7 @@ $color-text: #fff;
 $color-contrast-main: #d2a730;
 $color-contrast-second: #b56455;
 $color-button: #94ae96;
+$color-button-dark: #46584e;
 $color-contrast-dark: #885450;
 
 body {
