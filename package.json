@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
-    "@tsparticles/react": "^3.0.0",
     "@vercel/analytics": "^1.4.1",
     "gh-pages": "^6.1.1",
     "globals": "^15.3.0",

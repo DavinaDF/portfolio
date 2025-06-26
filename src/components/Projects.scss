@@ -1,6 +1,7 @@
 .realisation {
+  background-color: transparent;
   width: 100%;
-  height: 800px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,7 +57,7 @@
   }
 
   h2 {
-    color: #fff;
+    color: $color-contrast-dark;
     text-align: center;
     font-size: 40px;
     margin: 50px;
