@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-* {
-  margin: 0;
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
-h1, h2, h3, h4 {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: none;
   text-decoration: none;
 }
 
@@ -20,15 +32,14 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 body {
-  background-color: #1D1D1D;
   font-family: "JetBrains Mono";
-  max-width: 1960px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 768px) {
   body {

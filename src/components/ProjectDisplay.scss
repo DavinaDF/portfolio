@@ -1,0 +1,61 @@
+.projects-gallery {
+  //dynamic accordion img
+  height: 100%;
+  display: grid;
+  place-items: center;
+
+  .cards {
+    max-width: 80vw;
+    list-style-type: none;
+    display: flex;
+    gap: 0.15rem;
+    padding: 0.15rem;
+
+    &:hover :not(.projectCard:hover) {
+      flex: 1;
+
+      & img {
+        transform: scale(1.5);
+      }
+    }
+
+    & .projectCard {
+      flex: 1;
+      height: 70vmin;
+      cursor: pointer;
+      overflow: hidden;
+      transition: flex 1s;
+
+      &:first-of-type {
+        flex: 5;
+
+        &img {
+          transform: scale(1);
+        }
+        :hover :not(:first-of-type) {
+          flex: 1;
+
+          & img {
+            transform: scale(1.5);
+          }
+        }
+      }
+
+      &:hover {
+        flex: 5;
+
+        &img {
+          transform: scale(1);
+        }
+      }
+
+      &img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.5);
+        transition: transform 0.75s ease-in-out;
+      }
+    }
+  }
+}

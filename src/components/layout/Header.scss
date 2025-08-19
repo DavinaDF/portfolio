@@ -1,6 +1,7 @@
 .header {
-  position: fixed;
-  background-image: url("/bgheader.jpg");
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
   background-attachment: fixed;
   background-size: contain;
   z-index: 100;
@@ -9,13 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  h1 {
+  .header-name {
     margin: 0 20px;
-    color: $color-button;
+    color: $color-contrast-main;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     text-transform: uppercase;
-    letter-spacing: 0.6em;
+    letter-spacing: 0.3em;
   }
   .link-container {
     height: 100%;
@@ -24,36 +25,34 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
-    .menu {
+    .navbar {
       width: 100%;
       display: flex;
       justify-content: center;
       gap: 30px;
 
-      a {
-        h2 {
-          margin: auto;
-          padding: 4px 0;
-          width: 180px;
-          background-color: $color-contrast-main;
-          text-transform: uppercase;
-          font-weight: 900;
-          font-size: 14px;
-          letter-spacing: 2px;
-          color: $color-text;
-          border-radius: 10px;
-          border: 6px solid $color-contrast-main;
-          -webkit-box-shadow: inset 3px 3px 5px 4px #b68002;
-          box-shadow: inset 3px 3px 5px 4px #b68002;
-        }
+      h2 {
+        margin: auto;
+        padding: 4px 0;
+        width: 200px;
+        background-color: $color-contrast-main;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: $color-text;
+        border-radius: 10px;
+        border: 4px solid $color-contrast-main;
+        -webkit-box-shadow: inset 3px 3px 5px 4px #b68002;
+        box-shadow: inset 3px 3px 5px 4px #b68002;
       }
-      a:hover {
-        h2 {
-          background-color: $color-button;
-          border: 6px solid $color-button;
-          -webkit-box-shadow: inset 3px 3px 5px 4px #94ae97;
-          box-shadow: inset 3px 3px 5px 4px #628565;
-        }
+
+      h2:hover {
+        background-color: $color-button;
+        border: 4px solid $color-button;
+        -webkit-box-shadow: inset 3px 3px 5px 4px #94ae97;
+        box-shadow: inset 3px 3px 5px 4px #628565;
       }
     }
     .social {

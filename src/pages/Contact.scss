@@ -1,0 +1,13 @@
+.contact-container {
+  background-color: $color-button-dark;
+  border-radius: 30px;
+  box-shadow: -2px 2px $color-button;
+  padding: 40px;
+
+  form {
+    min-width: 50%;
+    min-height: 40%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}

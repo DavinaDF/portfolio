@@ -1,137 +1,169 @@
-.home {
+.page-content {
   width: 100%;
-  background-image: url("/bg.webp");
+  height: 100%;
+  background-image: url("/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
-  .first-view {
-    overflow: hidden;
-    height: 100vh;
-    display: flex;
-
-    .left-part {
-      background-color: $color-contrast-dark;
-      border-radius: 30px;
-      box-shadow: -2px 2px $color-contrast-second;
-      max-width: 30vw;
-      padding: 50px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 3rem;
-      h2 {
-        margin: 0;
-        color: #fff;
-        text-align: right;
-        font-family: "JetBrains Mono", sans-serif;
-        font-weight: 300;
-        font-size: 26px;
-        text-transform: uppercase;
-      }
-
-      .texte {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        p {
-          color: #fff;
-          font-family: "JetBrains Mono";
-          font-size: 18px;
-          font-weight: 200;
-          text-align: right;
-          line-height: 1.8rem;
-        }
-        strong {
-          opacity: 80%;
-          opacity: 70%;
-          font-weight: 800;
-          font-size: 20px;
-        }
-      }
-    }
-
-    .right-part {
-      overflow: hidden;
-      margin-top: 40vh;
-      img {
-        margin-right: 20vh;
-        object-fit: contain;
-        max-width: 60vh;
-      }
-    }
-  }
   section.part {
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-align: start;
+    height: calc(100svh - 100px);
+    width: 90vw;
+    padding: 80px 20px;
+    margin: auto;
+    scroll-snap-align: center;
   }
-  footer {
-    height: 30px;
-    background-color: #fff;
+  section h2 {
+    margin: auto;
+    padding: 20px;
+    color: $color-button;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.4em;
   }
-
-  @media screen and (max-width: 768px) {
-    .first-view {
-      min-height: 0;
-      display: block;
-      width: 100%;
-      margin: auto;
+  .presentation {
+    .presentation-container {
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
 
       .left-part {
-        display: block;
-        width: 100%;
-        min-height: 0;
+        grid-area: 1 / 1 / 7 / 4;
+        background-color: $color-button-dark;
+        border-radius: 30px;
+        box-shadow: 3px -3px $color-button;
+        max-width: 30vw;
+        padding: 50px;
         margin: auto;
-        .text {
-          width: 100%;
-          margin: auto;
-          padding: 10px;
-          h1 {
-            font-size: 16px;
-          }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3rem;
+        h3 {
+          margin: 0;
+          color: #fff;
+          text-align: right;
+          font-family: "JetBrains Mono", sans-serif;
+          font-weight: 300;
+          font-size: 26px;
+          text-transform: uppercase;
+        }
+
+        .texte {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
           p {
-            font-size: 16px;
+            color: #fff;
+            font-family: "JetBrains Mono";
+            font-size: 18px;
+            font-weight: 200;
+            text-align: right;
+            line-height: 1.8rem;
           }
-        }
-        img {
-          width: 100%;
-          margin: auto;
-        }
-      }
-      .right-part {
-        background-color: #1d1d1d;
-        width: 100%;
-        min-height: 0;
-        padding: 0;
-
-        .nav-container {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          .nav-item {
-            width: 180px;
-            height: 60px;
-            margin: 0 10px;
-
-            h2 {
-              padding: 0;
-              font-size: 20px;
-              font-weight: 200;
-            }
-          }
-        }
-        .link-github,
-        .link-linkedin {
-          gap: 30px;
-          img {
-            width: 60%;
-          }
-          i {
+          strong {
+            opacity: 80%;
+            opacity: 70%;
+            font-weight: 800;
             font-size: 20px;
           }
+        }
+      }
+
+      .right-part {
+        grid-area: 2 / 4 / 8 / 7;
+        max-width: 30vw;
+        margin: auto;
+        img {
+          width: 100%;
+          object-fit: contain;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .realisations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  background-color: #ffffff70;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .first-view {
+    min-height: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+
+    .left-part {
+      display: block;
+      width: 100%;
+      min-height: 0;
+      margin: auto;
+      .text {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        h1 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      img {
+        width: 100%;
+        margin: auto;
+      }
+    }
+    .right-part {
+      background-color: #1d1d1d;
+      width: 100%;
+      min-height: 0;
+      padding: 0;
+
+      .nav-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .nav-item {
+          width: 180px;
+          height: 60px;
+          margin: 0 10px;
+
+          h2 {
+            padding: 0;
+            font-size: 20px;
+            font-weight: 200;
+          }
+        }
+      }
+      .link-github,
+      .link-linkedin {
+        gap: 30px;
+        img {
+          width: 60%;
+        }
+        i {
+          font-size: 20px;
         }
       }
     }

@@ -1,7 +1,10 @@
 .presta {
-  width: 100%;
-  height: 100vh;
+  // width: 100%;
+  // height: 80vh;
+  display: flex;
+  flex-direction: column;
   align-content: center;
+  justify-content: space-between;
 
   .service-card-wrapper {
     margin: auto;
@@ -14,7 +17,7 @@
       padding-bottom: 20px;
       width: 25%;
       border-radius: 15px;
-      background-color: $color-button;
+      background-color: $color-button-dark;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -35,11 +38,17 @@
         border-radius: 10px;
         padding: 10px 20px;
         text-align: right;
-
+        hr {
+          width: 20px;
+          margin: auto;
+        }
         p {
-          margin: 10px 0;
-          font-size: 14px;
-          letter-spacing: 0.2px;
+          margin: 15px;
+          font-size: 16px;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          // letter-spacing: 0.2px;
+          text-align: center;
         }
       }
     }
