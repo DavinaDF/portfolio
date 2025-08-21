@@ -43,17 +43,18 @@ const Home = () => {
         <Service />
       </section>
       <section className="realisation view-3 part" id="projects">
-        <h2>{"< Réalisations />"}</h2>
-        <ProjectAccordion projects={ProjectsData} />
+        <h2>Le site est en construction</h2>
+        {/* <h2>{"< Réalisations />"}</h2>
+        <ProjectAccordion projects={ProjectsData} /> */}
       </section>
-      <section className="about view-4 part" id="about">
+      {/* <section className="about view-4 part" id="about">
         <h2>Quelques informations sur moi</h2>
         <About />
       </section>
       <section className="contact view-4 part" id="contact">
         <h2>Besoin d'un site internet ergonomique et efficace ?</h2>
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 };
