@@ -16,6 +16,7 @@
     "@cascadia-code/scroll-to-hash-element": "^2.0.3",
     "@emailjs/browser": "^4.3.3",
     "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.2.0",
     "gh-pages": "^6.1.1",
     "globals": "^15.3.0",
     "motion": "^12.6.3",
