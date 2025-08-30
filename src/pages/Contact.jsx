@@ -8,7 +8,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "17d060dc-3e21-44ea-a1fe-e4e5135b405d");
+    formData.append("access_key", "58388de2-e6e1-45cc-a353-b10a45d06e6a");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -27,15 +27,34 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
-      <form onSubmit={onSubmit}>
-        <input type="text" name="name" required />
-        <input type="email" name="email" required />
-        <textarea name="message" required></textarea>
+    <div className="contact-wrapper">
+      <div className="contact-container">
+        <form onSubmit={onSubmit}>
+          <label htmlFor="">
+            Nom prénom - ou Société :
+            <input type="text" name="name" required />
+          </label>
+          <label htmlFor="">
+            Adresse mail :
+            <input type="email" name="email" required />
+          </label>
+          <label htmlFor="">
+            Message :
+            <textarea name="message" type="text" rows="10" required></textarea>
+          </label>
 
-        <button type="submit">ENVOYER</button>
-      </form>
-      <span>{result}</span>
+          <button className="contact-button" type="submit">
+            ENVOYER
+          </button>
+        </form>
+        <span>{result}</span>
+      </div>
+      <div className="contact-picture">
+        <img
+          src="/photo-davina-crahet.webp"
+          alt="Photo de profil de Davina Crahet"
+        />
+      </div>
     </div>
   );
 };

@@ -1,16 +1,46 @@
-.about-container {
+.about {
+  display: flex;
+  flex-direction: column;
 
-    .photo {
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-    }
+  .about-container {
+    min-height: 40svh;
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 
-    p {
-        margin: auto;
-        font-weight: 100;
-        color: #fff;
-        text-align: justify;
-        max-width: 600px;
+    .about-card {
+      padding: 20px 10px;
+      width: 100%;
+      border-radius: 15px;
+      background-color: $color-button-dark;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .about-title {
+        width: 80%;
+        background-color: $color-text;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .about-content {
+        height: 80%;
+        background-color: $color-text;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin: 10px;
+        font-size: 14px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        letter-spacing: -0.2px;
+        text-align: left;
+      }
     }
+  }
 }

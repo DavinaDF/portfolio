@@ -1,20 +1,16 @@
 // import { Link } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/react";
 import Contact from "./Contact";
 import About from "./About";
 import Service from "./Service";
 import Type from "../components/Type";
-import Projects from "../components/ProjectsGallery";
 import ProjectAccordion from "../components/ProjectAccordion";
 import ProjectsData from "../data/projects.json";
 
 const Home = () => {
-  const sectionTitle = "< DAVINA CRAHET />";
-
   return (
     <div className="y mandatory-scroll-snapping page-content" dir="ltr">
       <section className="presentation view-1 part" id="presentation">
-        <h2>{sectionTitle}</h2>
+        <h2>{"< DAVINA CRAHET />"}</h2>
         <div className="presentation-container">
           <div className="left-part">
             <h3 className="titre">
@@ -43,18 +39,17 @@ const Home = () => {
         <Service />
       </section>
       <section className="realisation view-3 part" id="projects">
-        <h2>Le site est en construction</h2>
-        {/* <h2>{"< Réalisations />"}</h2>
-        <ProjectAccordion projects={ProjectsData} /> */}
+        <h2>{"< Réalisations />"}</h2>
+        <ProjectAccordion projects={ProjectsData} />
       </section>
-      {/* <section className="about view-4 part" id="about">
-        <h2>Quelques informations sur moi</h2>
+      <section className="about view-4 part" id="about">
+        <h2>{"< à propos />"}</h2>
         <About />
       </section>
       <section className="contact view-4 part" id="contact">
-        <h2>Besoin d'un site internet ergonomique et efficace ?</h2>
+        <h2>{"< contact />"}</h2>
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 };

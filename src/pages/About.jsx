@@ -1,7 +1,21 @@
+import { div } from "motion/react-client";
+import infoData from "../../src/data/infos.json";
+
 const About = () => {
+  const aboutData = infoData.about;
+
   return (
     <div className="about-container">
-      <div className="photo">
+      {infoData.map((aboutCard, index) => {
+        return (
+          <div className="about-card" key={index}>
+            <h3 className="about-title">{aboutCard.title}</h3>
+            <div className="about-content">{aboutCard.content}</div>
+          </div>
+        );
+      })}
+
+      {/* <div className="photo">
         <img src="/photo-davina-crahet.webp" alt="Photo Davina Crahet" />
       </div>
 
@@ -12,7 +26,7 @@ const About = () => {
         programmation.
         <br />
         <br />
-        Avec ce diplôme d’ingénieur en poche, je travaille en tant qu’UX
+        Avec ce diplôme d'ingénieur en poche, je travaille en tant qu'UX
         designer durant 5 ans pour différentes agences et entreprises. Je
         travaille alors sur des projets variés, touchant nombreux domaines :
         transports, banques, luxes, santé, commerces, paris sportifs, ...
@@ -35,7 +49,7 @@ const About = () => {
         <br />
         Ce métier est un choix du coeur, j’aime créer, j’aime coder, et toutes
         mes expériences passées me sont utiles au quotidien.{" "}
-      </p>
+      </p> */}
     </div>
   );
 };

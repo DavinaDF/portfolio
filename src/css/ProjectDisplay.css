@@ -1,0 +1,51 @@
+.projects-gallery {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.projects-gallery .cards {
+  max-width: 80vw;
+  list-style-type: none;
+  display: flex;
+  gap: 0.15rem;
+  padding: 0.15rem;
+}
+.projects-gallery .cards:hover :not(.projectCard:hover) {
+  flex: 1;
+}
+.projects-gallery .cards:hover :not(.projectCard:hover) img {
+  transform: scale(1.5);
+}
+.projects-gallery .cards .projectCard {
+  flex: 1;
+  height: 70vmin;
+  cursor: pointer;
+  overflow: hidden;
+  transition: flex 1s;
+}
+.projects-gallery .cards .projectCard:first-of-type {
+  flex: 5;
+}
+.projects-gallery .cards .projectCard:first-of-typeimg {
+  transform: scale(1);
+}
+.projects-gallery .cards .projectCard:first-of-type :hover :not(:first-of-type) {
+  flex: 1;
+}
+.projects-gallery .cards .projectCard:first-of-type :hover :not(:first-of-type) img {
+  transform: scale(1.5);
+}
+.projects-gallery .cards .projectCard:hover {
+  flex: 5;
+}
+.projects-gallery .cards .projectCard:hoverimg {
+  transform: scale(1);
+}
+.projects-gallery .cards .projectCardimg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.5);
+  transition: transform 0.75s ease-in-out;
+}/*# sourceMappingURL=ProjectDisplay.css.map */

@@ -18,10 +18,24 @@ const ProjectAccordion = () => {
             onClick={() => handleToggle(index)}
           >
             <img src={project.image} alt={project.title} />
+            <span className="category">{project.category}</span>
             <div className="legend">
-              <span className="category">{project.category}</span>
-              <h3>{project.client}</h3>
-              <p>{project.title}</p>
+              <div className="infos">
+                <h3>{project.client}</h3>
+                <p>{project.description}</p>
+              </div>
+              <div className="links">
+                <a href={project.link} target="_blank" className="web-link">
+                  <i className="fa-solid fa-link"></i>
+                </a>
+                <a
+                  href={project.gitlink}
+                  target="_blank"
+                  className="github-link"
+                >
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
         );

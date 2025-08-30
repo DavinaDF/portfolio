@@ -8,7 +8,6 @@ html {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 h1,
@@ -19,13 +18,7 @@ h4 {
   text-decoration: none;
 }
 
-img {
-  overflow-clip-margin: unset;
-  overflow: hidden;
-}
-
 ul {
-  list-style: none;
   padding: 0;
   margin: 0;
 }

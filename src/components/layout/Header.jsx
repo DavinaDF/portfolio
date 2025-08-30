@@ -1,9 +1,10 @@
 import { HashLink as Link } from "react-router-hash-link";
+import { NavHashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
     <div className="header">
-      <Link to="/" className="header-name">
+      <Link to="/#presentation" className="header-name">
         {"<DC/>"}
       </Link>
       <div className="link-container">

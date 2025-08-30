@@ -1,7 +1,7 @@
 .projects-accordion {
   margin: auto;
   width: 80%;
-  max-width: 1200px;
+  max-width: 90vw;
   display: flex;
   gap: 20px;
   cursor: pointer;
@@ -15,10 +15,11 @@
     background-color: $color-button-dark;
     position: relative;
     overflow: hidden;
-    width: 80px;
+    width: 100px;
     height: 70svh;
     border-radius: 30px;
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
     opacity: 0.8;
     transition: 0.5s;
@@ -26,7 +27,7 @@
     img {
       height: 100%;
       object-fit: contain;
-      opacity: 0.8;
+      opacity: 0.9;
     }
 
     &:hover {
@@ -37,29 +38,23 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 100%;
-      background-color: #46584edf;
-      height: 120px;
+      right: 0;
+      background-color: #46584ee8;
       z-index: 1;
       opacity: 0;
       visibility: hidden;
-      padding: 0 20px;
+      padding: 20px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       gap: 10px;
       transition: 0.25s;
     }
 
-    .category {
-      width: fit-content;
-      padding: 4px 20px;
-      background-color: #fff;
-      color: $color-button-dark;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: 700;
-      border-radius: 10px;
+    .infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 10px;
     }
 
     h3 {
@@ -73,16 +68,41 @@
       font-weight: 100;
     }
 
+    .links {
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      i {
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+
     &.active {
       width: 100%;
       opacity: 1;
 
       img {
+        // position: absolute;
+        // z-index: 0;
+        // top: -10px;
+        width: 100%;
+
+        object-fit: contain;
+      }
+      .category {
         position: absolute;
-        z-index: 0;
-        top: 50%;
-        left: 50%;
-        translate: -50% -50%;
+        top: 12px;
+        left: -15px;
+        width: fit-content;
+        padding: 10px 20px 10px 30px;
+        background-color: $color-contrast-main;
+        color: $color-text;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+        border-radius: 20px;
       }
       .legend {
         opacity: 1;
