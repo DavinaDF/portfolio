@@ -1,5 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { NavHashLink } from "react-router-hash-link";
+import { Navbar } from "./NavBar";
+import "./NavBar.scss";
 
 const Header = () => {
   return (
@@ -42,6 +44,9 @@ const Header = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="mobile">
+        <Navbar />
       </div>
     </div>
   );

@@ -4,7 +4,10 @@ const Service = () => {
   return (
     <div className="service-card-wrapper">
       <div className="service-card">
-        <h3 className="service-card-title">UX/UI DESIGN</h3>
+        <h3 className="service-card-title">
+          UX/UI DESIGN
+          <i class="fa-solid fa-caret-right"></i>
+        </h3>
         <div className="service-card-content">
           <p>
             Étude des usages et des besoins utilisateurs afin de comprendre,
@@ -23,7 +26,8 @@ const Service = () => {
         </div>
       </div>
       <div className="service-card">
-        <h3 className="service-card-title">Site internet</h3>
+        <h3 className="service-card-title">Création de site</h3>
+        <i class="fa-solid fa-caret-right"></i>
         <div className="service-card-content">
           <p>
             Développement intégrale de sites vitrines (pour entreprises,
@@ -43,6 +47,7 @@ const Service = () => {
       </div>
       <div className="service-card">
         <h3 className="service-card-title">Autres prestations</h3>
+        <i class="fa-solid fa-caret-right"></i>
         <div className="service-card-content">
           <p>
             Optimisation des performances du site, de l’accessibilité, du SEO

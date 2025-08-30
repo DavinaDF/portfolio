@@ -40,7 +40,7 @@ const Contact = () => {
           </label>
           <label htmlFor="">
             Message :
-            <textarea name="message" type="text" rows="10" required></textarea>
+            <textarea name="message" type="text" rows="8" required></textarea>
           </label>
 
           <button className="contact-button" type="submit">
