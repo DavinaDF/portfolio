@@ -8,7 +8,7 @@
     "link": "https://www.mamacam.fr/",
     "gitlink": "https://github.com/DavinaDF/mamacam/",
     "title": "Création et développement d'un site vitrine pour un restaurant bordelais",
-    "image": "./mamacam.webp",
+    "image": "./Mamacam-home-desktop.webp",
     "skills": ["HTML/CSS", "React", "API REST", "Responsive", "Figma"],
     "notions": ["Wireframe", "SEO", "Données analytiques", "JSON"],
     "description": "Création de maquettes graphiques et développement d'une application web responsive pour un restaurant. Utilisation d'API pour automatiser l'affichage du menu du jour. Optimisation du référencement naturel pour une meilleure visibilité sur les moteurs de recherche."
