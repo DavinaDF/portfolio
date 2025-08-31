@@ -41,7 +41,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
-    max-width: 100%;
+    width: 100%;
     display: initial;
+    overflow-y: hidden;
   }
 }/*# sourceMappingURL=reset.css.map */

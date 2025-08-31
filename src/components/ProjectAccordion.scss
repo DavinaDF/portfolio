@@ -110,5 +110,96 @@
   }
 
   @media screen and (max-width: 768px) {
+    // margin: auto;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    cursor: pointer;
+
+    .projects-accordion-item {
+      grid-area: span / span / span / span;
+      z-index: 1;
+      box-shadow: 2px -2px #94ae96;
+      background-color: $color-background;
+      position: relative;
+      overflow: hidden;
+      max-height: 200px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      opacity: 0.8;
+      transition: 0.5s;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.6;
+      }
+
+      .legend {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      h3 {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      p {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 100;
+      }
+
+      .links {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        i {
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+
+      &.active {
+        width: 90vw;
+        z-index: 10;
+        opacity: 1;
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+
+        img {
+          opacity: 1;
+          position: absolute;
+          z-index: 2;
+          object-fit: contain;
+        }
+        .category {
+          position: absolute;
+          top: 12px;
+          left: -15px;
+          width: fit-content;
+          padding: 10px 20px 10px 30px;
+          background-color: $color-contrast-main;
+          color: $color-text;
+          text-transform: uppercase;
+          font-size: 10px;
+          font-weight: 700;
+          border-radius: 20px;
+        }
+        .legend {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
   }
 }

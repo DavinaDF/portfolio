@@ -102,14 +102,15 @@
         flex-direction: column-reverse;
 
         .left-part {
-          margin-top: -40px;
-          margin-right: 20px;
-          padding: 20px;
+          margin-top: -50px;
+          margin-right: 0px;
+          padding: 40px 20px 20px 20px;
           width: 100%;
+          max-width: 70%;
           border-radius: 8px;
           gap: 15px;
           h3 {
-            font-size: 14px;
+            font-size: 16px;
             text-transform: uppercase;
           }
 
@@ -129,6 +130,7 @@
         .right-part {
           z-index: 10;
           margin-left: 10px;
+          max-width: 60%;
         }
       }
     }
@@ -150,6 +152,11 @@
   }
   @media screen and (max-width: 768px) {
     background-image: url("/bg-mobile.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+    background-attachment: fixed;
     section.part {
       min-height: auto;
       margin: 0px;

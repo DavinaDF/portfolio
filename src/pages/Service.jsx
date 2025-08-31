@@ -32,10 +32,9 @@ const Service = () => {
         </div>
         <div className="service-card-content">
           <p>
-            Développement intégrale de sites vitrines (pour entreprises,
-            artisans, restaurants, chambres d’hôte, ...) en HTML/CSS, Javascript
-            et/ou React, en y intégrant les fonctionnalités dont vous avez
-            besoin.
+            Conception intégrale de sites vitrines (pour entreprises, artisans,
+            restaurants, chambres d’hôte, ...) en HTML/CSS, Javascript et/ou
+            React, en y intégrant les fonctionnalités dont vous avez besoin.
           </p>
           <hr />
           <p>
