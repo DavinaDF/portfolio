@@ -1,3 +1,5 @@
+@forward "../sass/var.scss";
+
 html {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
@@ -34,14 +36,6 @@ a {
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
-$color-background: #000;
-$color-text: #fff;
-$color-contrast-main: #d2a730;
-$color-contrast-second: #b56455;
-$color-button: #94ae96;
-$color-button-dark: #46584e;
-$color-contrast-dark: #885450;
-
 body {
   font-family: "JetBrains Mono";
   width: 100%;
@@ -51,6 +45,5 @@ body {
   @media screen and (max-width: 768px) {
     width: 100%;
     display: initial;
-    overflow-y: hidden;
   }
 }

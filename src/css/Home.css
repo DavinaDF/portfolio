@@ -1,204 +1,200 @@
-.first-view {
-  min-height: 100vh;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: row;
+.page-content {
+  width: 100%;
+  height: 100%;
+  background-image: url("/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start;
+  background-attachment: fixed;
 }
-
-.left-part {
-  min-height: 100vh;
-  width: 60%;
-  background-color: #1D1D1D;
+.page-content section.part {
+  height: 100%;
+  min-height: 80svh;
+  width: 90vw;
+  padding: 90px 20px 50px 20px;
+  margin: auto;
+  scroll-snap-align: start;
+}
+.page-content section h2 {
+  padding: 20px;
+  color: #94ae96;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.4em;
+}
+.page-content .presentation .presentation-container {
+  height: 100%;
+  max-height: 80svh;
+  min-height: 70svh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.page-content .presentation .presentation-container .left-part {
+  z-index: 2;
+  grid-area: 2/1/5/6;
+  background-color: #46584e;
+  border-radius: 30px;
+  max-width: 60%;
+  padding: 50px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 3rem;
 }
-.left-part .text {
-  margin: 0 50px;
-}
-.left-part .text h1 {
+.page-content .presentation .presentation-container .left-part h3 {
+  margin: 0;
   color: #fff;
+  text-align: right;
   font-family: "JetBrains Mono", sans-serif;
   font-weight: 300;
-  font-size: 24px;
-  margin: 40px auto;
+  font-size: 26px;
+  text-transform: uppercase;
 }
-.left-part .text p {
+.page-content .presentation .presentation-container .left-part .texte {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.page-content .presentation .presentation-container .left-part .texte p {
   color: #fff;
   font-family: "JetBrains Mono";
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 200;
+  text-align: right;
+  line-height: 1.8rem;
+}
+.page-content .presentation .presentation-container .left-part .texte strong {
+  opacity: 80%;
+  opacity: 70%;
+  font-weight: 800;
+  font-size: 20px;
+}
+.page-content .presentation .presentation-container .right-part {
+  z-index: 0;
+  grid-area: 3/4/6/9;
+  max-width: 40%;
   margin: auto;
 }
-.left-part img {
+.page-content .presentation .presentation-container .right-part img {
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-bottom: 0px;
-  max-width: 100%;
+  overflow: hidden;
 }
-
-.right-part {
-  min-height: 100vh;
-  width: 40%;
-  padding: 20px 10px;
-  background-color: #fff;
+@media screen and (max-width: 1200px) {
+  .page-content .presentation .presentation-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+  }
+  .page-content .presentation .presentation-container .left-part {
+    width: 60%;
+  }
+  .page-content .presentation .presentation-container .right-part {
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-content .presentation .presentation-container {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    margin: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .page-content .presentation .presentation-container .left-part {
+    margin-top: -50px;
+    margin-right: 0px;
+    padding: 40px 20px 20px 20px;
+    width: 100%;
+    max-width: 70%;
+    border-radius: 8px;
+    gap: 15px;
+  }
+  .page-content .presentation .presentation-container .left-part h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .page-content .presentation .presentation-container .left-part .texte p {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1rem;
+  }
+  .page-content .presentation .presentation-container .left-part .texte strong {
+    opacity: 100%;
+    font-weight: 800;
+    font-size: 12px;
+  }
+  .page-content .presentation .presentation-container .right-part {
+    z-index: 10;
+    margin-left: 10px;
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .page-content {
+    margin: auto;
+  }
+  .page-content section.part {
+    padding: 80px 10px 20px 10px;
+    margin: auto;
+  }
+  .page-content section h2 {
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-content {
+    background-image: url("/bg-mobile.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+    background-attachment: fixed;
+  }
+  .page-content section.part {
+    min-height: auto;
+    margin: 0px;
+    padding: 10px;
+    scroll-snap-align: none;
+  }
+  .page-content section h2 {
+    padding: 20px 10px;
+    color: #94ae96;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4em;
+  }
+}
+.page-content .realisation {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.right-part .nav-container {
+  align-content: center;
+  justify-content: space-between;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.right-part .nav-item {
-  margin-bottom: 50px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.right-part .nav-item h2 {
-  font-size: 30px;
-  color: #fff;
-  position: absolute;
-  left: 20px;
-}
-.right-part .social-media {
-  display: flex;
-  gap: 50px;
-  color: #fff;
-}
-.right-part .social-media .link-github, .right-part .social-media .link-linkedin {
-  width: 87px;
-  height: 84px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.right-part .social-media .link-github a, .right-part .social-media .link-linkedin a {
-  text-decoration: none;
-  color: #fff;
-}
-.right-part .social-media .link-github img, .right-part .social-media .link-linkedin img {
-  position: absolute;
-}
-.right-part .social-media .link-github i, .right-part .social-media .link-linkedin i {
-  color: #fff;
-  position: absolute;
-  font-size: 50px;
-}
-
-.skills-home {
-  z-index: 1;
-  background-color: #fff;
-  margin: auto;
-}
-
-.about {
-  background-color: #1D1D1D;
-  margin-bottom: 40px;
-}
-.about h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 40px;
-}
-
-.contact-bottom h2 {
-  color: #fff;
 }
 
 footer {
-  height: 30px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.background {
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
-  top: 0;
-  left: 0;
+  bottom: 0px;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-@media screen and (max-width: 768px) {
-  .first-view {
-    min-height: 0;
-    display: block;
-    width: 100%;
-    margin: auto;
-  }
-  .first-view .left-part {
-    display: block;
-    width: 100%;
-    min-height: 0;
-    margin: auto;
-  }
-  .first-view .left-part .text {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-  }
-  .first-view .left-part .text h1 {
-    font-size: 16px;
-  }
-  .first-view .left-part .text p {
-    font-size: 16px;
-  }
-  .first-view .left-part img {
-    width: 100%;
-    margin: auto;
-  }
-  .first-view .right-part {
-    background-color: #1D1D1D;
-    width: 100%;
-    min-height: 0;
-    padding: 0;
-  }
-  .first-view .right-part .nav-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .first-view .right-part .nav-container .nav-item {
-    width: 180px;
-    height: 60px;
-    margin: 0 10px;
-  }
-  .first-view .right-part .nav-container .nav-item h2 {
-    padding: 0;
-    font-size: 20px;
-    font-weight: 200;
-  }
-  .first-view .right-part .link-github, .first-view .right-part .link-linkedin {
-    gap: 30px;
-  }
-  .first-view .right-part .link-github img, .first-view .right-part .link-linkedin img {
-    width: 60%;
-  }
-  .first-view .right-part .link-github i, .first-view .right-part .link-linkedin i {
-    font-size: 20px;
-  }
-  .skills-home {
-    background-color: #1D1D1D;
-    border-top: solid #fff;
-    margin: 30px 0;
-  }
-  .about {
-    border-top: solid #fff;
-    background-color: #1D1D1D;
-  }
-  .about h2 {
-    font-size: 24px;
-  }
-  .about p {
-    width: 80%;
-  }
+  padding: 8px 0;
+  background-color: rgba(255, 255, 255, 0.4392156863);
+  text-align: center;
+  font-size: 10px;
 }/*# sourceMappingURL=Home.css.map */

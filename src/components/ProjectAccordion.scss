@@ -109,24 +109,23 @@
     }
   }
 
+  @media screen and (max-width: 1025px) {
+    // margin: auto;
+    width: 100%;
+    max-width: 100%;
+  }
   @media screen and (max-width: 768px) {
     // margin: auto;
     width: 100%;
     max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-    cursor: pointer;
+    flex-direction: column;
 
     .projects-accordion-item {
-      grid-area: span / span / span / span;
-      z-index: 1;
       box-shadow: 2px -2px #94ae96;
       background-color: $color-background;
       position: relative;
-      overflow: hidden;
-      max-height: 200px;
+      height: 10svh;
+      width: 100%;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
@@ -134,9 +133,10 @@
       transition: 0.5s;
 
       img {
-        height: 100%;
+        width: 100%;
         object-fit: cover;
         opacity: 0.6;
+        top: 0;
       }
 
       .legend {
@@ -168,19 +168,18 @@
           font-size: 20px;
         }
       }
-
       &.active {
-        width: 90vw;
-        z-index: 10;
+        height: 300px !important;
+        max-height: 300px !important;
+        width: 100%;
         opacity: 1;
-        grid-column-start: span 2;
-        grid-row-start: span 2;
 
         img {
           opacity: 1;
           position: absolute;
-          z-index: 2;
-          object-fit: contain;
+          object-fit: cover;
+          z-index: 0;
+          translate: -50% -50%;
         }
         .category {
           position: absolute;

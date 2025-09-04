@@ -30,22 +30,31 @@ const Contact = () => {
     <div className="contact-wrapper">
       <div className="contact-container">
         <form onSubmit={onSubmit}>
-          <label htmlFor="">
-            Nom prénom - ou Société :
-            <input type="text" name="name" required />
-          </label>
-          <label htmlFor="">
-            Adresse mail :
-            <input type="email" name="email" required />
-          </label>
-          <label htmlFor="">
-            Message :
-            <textarea name="message" type="text" rows="8" required></textarea>
-          </label>
+          <div className="contact-intro">
+            <h3>On discute ?</h3>
+            <p>
+              Pour toute demande, renseignement supplémentaire, ou prise de
+              contact, n'hésitez pas à m'écrire en utilisant ce formulaire.{" "}
+            </p>
+          </div>
+          <div className="contact-form">
+            <label htmlFor="">
+              Nom prénom - ou Société :
+              <input type="text" name="name" required />
+            </label>
+            <label htmlFor="">
+              Adresse mail :
+              <input type="email" name="email" required />
+            </label>
+            <label htmlFor="">
+              Message :
+              <textarea name="message" type="text" rows="8" required></textarea>
+            </label>
 
-          <button className="contact-button" type="submit">
-            ENVOYER
-          </button>
+            <button className="contact-button" type="submit">
+              ENVOYER
+            </button>
+          </div>
         </form>
         <span>{result}</span>
       </div>

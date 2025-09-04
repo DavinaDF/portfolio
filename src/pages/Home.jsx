@@ -46,7 +46,7 @@ const Home = () => {
         <h2>{"< à propos />"}</h2>
         <About />
       </section>
-      <section className="contact view-4 part" id="contact">
+      <section className="contact view-5 part" id="contact">
         <h2>{"< contact />"}</h2>
         <Contact />
       </section>
