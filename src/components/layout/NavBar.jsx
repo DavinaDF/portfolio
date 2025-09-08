@@ -9,27 +9,48 @@ export const Navbar = () => {
     <nav>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <i className="fa-solid fa-bars"></i>
-        <span></span>
-        <span></span>
-        <span></span>
       </div>
-      <ul className={menuOpen ? "open" : ""}>
-        <li>
-          <HashLink to="/#presentation">{"<DC/>"}</HashLink>
-        </li>
-        <li>
-          <HashLink to="/#services">Prestations</HashLink>
-        </li>
-        <li>
-          <HashLink to="/#projects">Réalisations</HashLink>
-        </li>
-        <li>
-          <HashLink to="/#about">à propos</HashLink>
-        </li>
-        <li>
-          <HashLink to="/#contact">Contact</HashLink>
-        </li>
-      </ul>
+      {menuOpen && (
+        <div className="menu-open" onClick={() => setMenuOpen(!menuOpen)}>
+          <div className="content">
+            <i className="fa-solid fa-xmark"></i>
+            <div className="links">
+              <HashLink to="/#services">
+                <h2>Prestations</h2>
+              </HashLink>
+              <HashLink to="/#projects">
+                <h2>Réalisations</h2>
+              </HashLink>
+              <HashLink to="/#about">
+                <h2>à propos</h2>
+              </HashLink>
+              <HashLink to="/#contact">
+                <h2>Contact</h2>
+              </HashLink>
+            </div>
+            <div className="social">
+              <div className="github social-item">
+                <a
+                  href="https://github.com/DavinaDF"
+                  target="_blank"
+                  className="github-link"
+                >
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div className="linkedin social-item">
+                <a
+                  href="https://www.linkedin.com/in/davina-crahet-83888847/"
+                  target="_blank"
+                  className="linkedin-link"
+                >
+                  <i className="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

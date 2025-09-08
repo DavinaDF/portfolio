@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   .contact-wrapper {
-    max-height: 80svh;
+    max-height: 70svh;
     object-fit: contain;
     margin: auto;
     display: grid;
@@ -139,7 +139,7 @@
         border-radius: 10px;
         padding: 20px;
         margin: auto;
-        width: 90%;
+        width: auto;
 
         form {
           margin: auto;
