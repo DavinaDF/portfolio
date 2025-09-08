@@ -89,8 +89,8 @@
 
   @media screen and (max-width: 768px) {
     .service-card-wrapper {
-      width: auto;
-      min-width: 80vw;
+      // width: auto;
+      // min-width: 80vw;
       margin: auto;
       margin-top: 10px;
       display: flex;
@@ -107,10 +107,10 @@
         gap: 10px;
       }
       .accordion-item {
-        box-sizing: content-box;
+        box-sizing: border-box;
+        width: 100%;
         padding: 6px;
         overflow: hidden;
-        width: 100%;
         border-radius: 12px;
         background-color: $color-button-dark;
         display: flex;
@@ -119,6 +119,7 @@
         gap: 10px;
 
         .accordion-title {
+          box-sizing: border-box;
           cursor: pointer;
           background-color: $color-text;
           border-radius: 10px;
@@ -140,6 +141,7 @@
           }
         }
         .accordion-content {
+          box-sizing: border-box;
           display: none;
           background-color: $color-text;
           border-radius: 10px;
