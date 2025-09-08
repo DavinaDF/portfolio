@@ -1,4 +1,5 @@
 import React from "react";
+import AccordionItem from "../components/AccordionItem";
 
 const Service = () => {
   return (
@@ -6,7 +7,6 @@ const Service = () => {
       <div className="service-card">
         <div className="service-card-title">
           <h3>UX/UI DESIGN</h3>
-          <i className="fa-solid fa-caret-right"></i>
         </div>
         <div className="service-card-content">
           <p>
@@ -28,7 +28,6 @@ const Service = () => {
       <div className="service-card">
         <div className="service-card-title">
           <h3>Création de site</h3>
-          <i className="fa-solid fa-caret-right"></i>
         </div>
         <div className="service-card-content">
           <p>
@@ -49,7 +48,6 @@ const Service = () => {
       <div className="service-card">
         <div className="service-card-title">
           <h3>Autres prestations</h3>
-          <i className="fa-solid fa-caret-right"></i>
         </div>
         <div className="service-card-content">
           <p>
@@ -65,6 +63,53 @@ const Service = () => {
             suivie par des propositions concrètes d’axes d’amélioration
           </p>
         </div>
+      </div>
+      <div className="accordion">
+        <AccordionItem title="UX design">
+          <p>
+            Étude des usages et des besoins utilisateurs afin de comprendre,
+            évaluer et améliorer l’expérience de votre site
+          </p>
+          <hr />
+          <p>
+            Conception d’interfaces optimales, intuitives et adaptées aux
+            besoins de vos utilisateurs (wireframes, maquettes et/ou protoypes)
+          </p>
+          <hr />
+          <p>
+            Proposition d’animations et de transitions afin de créer une
+            expérience de navigation optimale
+          </p>
+        </AccordionItem>
+        <AccordionItem title="Création de site">
+          <p>
+            Conception intégrale de sites vitrines (pour entreprises, artisans,
+            restaurants, chambres d’hôte, ...) en HTML/CSS, Javascript et/ou
+            React, en y intégrant les fonctionnalités dont vous avez besoin.
+          </p>
+          <hr />
+          <p>
+            Création de sites e-commerce en utilisant un CMS (Wordpress ou Wix)
+          </p>
+          <hr />
+          <p>
+            Formation en fin de projet pour prise en main de votre nouveau site{" "}
+          </p>
+        </AccordionItem>
+        <AccordionItem title="Autres prestations">
+          <p>
+            Optimisation des performances du site, de l’accessibilité, du SEO
+          </p>
+          <hr />
+          <p>
+            Possibilité de maintenance annuelle après la mise en ligne du site
+          </p>
+          <hr />
+          <p>
+            Réalisation d’audit UX, d'audit ergonomique, d'audit de performance,
+            suivie par des propositions concrètes d’axes d’amélioration
+          </p>
+        </AccordionItem>
       </div>
     </div>
   );

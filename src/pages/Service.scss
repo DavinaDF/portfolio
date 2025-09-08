@@ -11,6 +11,9 @@
     display: flex;
     justify-content: center;
     gap: 50px;
+    .accordion {
+      display: none;
+    }
 
     .service-card {
       padding-top: 20px;
@@ -96,33 +99,105 @@
       gap: 10px;
 
       .service-card {
+        display: none;
+      }
+      .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .accordion-item {
+        box-sizing: content-box;
         padding: 6px;
+        overflow: hidden;
         width: 100%;
         border-radius: 12px;
-        flex-direction: row;
+        background-color: $color-button-dark;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
         gap: 10px;
 
-        .service-card-title {
-          width: 100%;
+        .accordion-title {
+          cursor: pointer;
+          background-color: $color-text;
           border-radius: 10px;
-          font-size: 14px;
+          padding: 10px 20px;
+          font-size: 12px;
           text-align: left;
           text-transform: uppercase;
-          box-sizing: border-box;
           display: flex;
           justify-content: space-between;
+          align-items: center;
+
           i {
-            display: inline;
+            transition: transform 0.4s ease;
             color: $color-button-dark;
-            font-size: 18px;
+            font-size: 24px;
+          }
+          &.down {
+            transform: rotate(90deg);
           }
         }
-
-        .service-card-content {
+        .accordion-content {
           display: none;
+          background-color: $color-text;
+          border-radius: 10px;
+          padding: 10px 20px;
+          text-align: right;
+          transform: translateY(-100px);
+          overflow: hidden;
+          opacity: 0;
+          height: 0;
+          transition: all 0.6s ease-in-out;
+          hr {
+            width: 20px;
+            margin: auto;
+          }
+          p {
+            margin: 15px;
+            font-size: 16px;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
+            // letter-spacing: 0.2px;
+            text-align: center;
+          }
+          &.animate {
+            display: inline;
+            opacity: 1;
+            transform: translateY(0px);
+            height: max-content;
+          }
         }
       }
+      // .service-card {
+      //   padding: 6px;
+      //   width: 100%;
+      //   border-radius: 12px;
+      //   flex-direction: row;
+      //   justify-content: space-between;
+      //   gap: 10px;
+
+      //   .service-card-title {
+      //     width: 100%;
+      //     border-radius: 10px;
+      //     font-size: 12px;
+      //     text-align: left;
+      //     text-transform: uppercase;
+      //     box-sizing: border-box;
+      //     display: flex;
+      //     justify-content: space-between;
+      //     i {
+      //       display: inline;
+      //       color: $color-button-dark;
+      //       font-size: 18px;
+      //     }
+      //   }
+
+      //   .service-card-content {
+      //     display: none;
+      //   }
+      // }
     }
   }
 }
